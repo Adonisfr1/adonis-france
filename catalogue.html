@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WRGHPS4L');</script>
+<!-- End Google Tag Manager -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catalogue produits — Adonis France | Grossiste B2B</title>
+  <meta name="description" content="Catalogue complet Adonis France — charbon pour encens 33mm/40mm/Coco XL, thés en vrac Chunmee et Gunpowder, sacs tissés PP. Tarifs grossiste sur demande." />
+  <link rel="icon" type="image/png" href="logo%20adonis-01.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Adonis France" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:title" content="Catalogue — Adonis France" />
+  <meta property="og:description" content="Catalogue grossiste B2B — charbon pour encens et thés en vrac. Import direct depuis la Chine." />
+  <meta property="og:image" content="https://adonis-fr.netlify.app/logo%20adonis-01.png" />
+  <meta property="og:url" content="https://adonis-fr.netlify.app/catalogue.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root{
+      --cream:#fdfbf7;--cream-2:#f5f1ea;--cream-3:#ede7da;
+      --navy:#0e1b2e;--navy-2:#162540;--navy-3:#1e334f;
+      --gold:#b8892b;--gold-light:#d4a84e;--gold-pale:#f5e8cc;
+      --ink:#1a1710;--muted:#6b6457;
+      --border:rgba(14,27,46,.08);--border-gold:rgba(184,137,43,.22);
+      --ease-expo:cubic-bezier(0.16,1,0.3,1);
+      --shadow-sm:0 2px 12px rgba(14,27,46,.06);
+      --shadow-md:0 8px 40px rgba(14,27,46,.09);
+      --shadow-lg:0 24px 80px rgba(14,27,46,.12);
+      --shadow-gold:0 8px 32px rgba(184,137,43,.18);
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;font-size:16px}
+    body{font-family:'Plus Jakarta Sans',sans-serif;color:var(--ink);background:var(--cream);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+    img{max-width:100%;display:block}
+    a{text-decoration:none;color:inherit}
+    ul{list-style:none}
+    body::before{content:'';position:fixed;inset:0;z-index:999;pointer-events:none;opacity:.025;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:200px 200px}
+    .container{width:min(1200px,90%);margin:0 auto}
+    .reveal{opacity:0;transform:translateY(20px);transition:opacity .7s var(--ease-expo),transform .7s var(--ease-expo)}
+    .reveal.visible{opacity:1;transform:none}
+    .reveal-delay-1{transition-delay:.08s}.reveal-delay-2{transition-delay:.16s}.reveal-delay-3{transition-delay:.24s}.reveal-delay-4{transition-delay:.32s}
+
+    /* ── NAVBAR ── */
+    .nav-wrap{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;justify-content:center;padding:18px 24px}
+    .navbar{background:rgba(14,27,46,.9);backdrop-filter:blur(20px) saturate(1.4);-webkit-backdrop-filter:blur(20px) saturate(1.4);border:1px solid rgba(255,255,255,.1);border-radius:100px;padding:10px 10px 10px 24px;display:flex;align-items:center;gap:36px;box-shadow:0 8px 32px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.08)}
+    .nav-logo img{height:36px}
+    .nav-links{display:flex;gap:28px}
+    .nav-links a{font-size:.8rem;font-weight:500;color:rgba(255,255,255,.6);letter-spacing:.01em;transition:color .25s}
+    .nav-links a:hover,.nav-links a.active{color:#fff}
+    .nav-cta{background:var(--gold);color:var(--navy);font-size:.78rem;font-weight:700;padding:9px 20px;border-radius:100px;display:flex;align-items:center;gap:8px;transition:background .25s,transform .25s,box-shadow .25s}
+    .nav-cta:hover{background:var(--gold-light);transform:scale(1.04);box-shadow:var(--shadow-gold)}
+    .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;margin-left:auto}
+    .hamburger span{width:22px;height:1.5px;background:#fff;border-radius:2px;transform-origin:center;transition:transform .35s,opacity .35s;display:block}
+    .hamburger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+    .hamburger.open span:nth-child(2){opacity:0;transform:scaleX(0)}
+    .hamburger.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+    .mob-menu{display:none;position:fixed;inset:0;background:var(--navy);z-index:190;flex-direction:column;align-items:center;justify-content:center;gap:32px}
+    .mob-menu a{font-size:1.3rem;font-weight:600;color:rgba(255,255,255,.7)}
+    .mob-menu .nav-cta{font-size:1rem;padding:14px 36px}
+
+    /* ── HERO ── */
+    .hero{background:var(--navy);padding:130px 0 72px;position:relative;overflow:hidden}
+    .hero-bg{position:absolute;inset:0;background-image:url("motif%20hichem.png");background-size:360px;opacity:.035;pointer-events:none}
+    .hero-inner{position:relative;z-index:1;display:flex;align-items:flex-end;justify-content:space-between;gap:48px;flex-wrap:wrap}
+    .hero-text{}
+    .hero-eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.68rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-light);margin-bottom:18px}
+    .hero-eyebrow::before{content:'';width:20px;height:1px;background:currentColor}
+    .hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,4.5vw,3.8rem);font-weight:700;color:#fff;line-height:1.08;letter-spacing:-.02em;margin-bottom:16px}
+    .hero-sub{font-size:.9rem;color:rgba(255,255,255,.45);line-height:1.7;max-width:460px}
+    .hero-actions{display:flex;gap:12px;align-items:center;flex-shrink:0;flex-wrap:wrap}
+    .btn-primary{display:inline-flex;align-items:center;gap:9px;background:var(--gold);color:var(--navy);font-size:.82rem;font-weight:700;padding:13px 24px;border-radius:100px;transition:background .25s,transform .25s,box-shadow .25s}
+    .btn-primary:hover{background:var(--gold-light);transform:translateY(-2px);box-shadow:var(--shadow-gold)}
+    .btn-ghost{display:inline-flex;align-items:center;gap:8px;color:rgba(255,255,255,.55);font-size:.82rem;font-weight:500;padding:13px 24px;border-radius:100px;border:1px solid rgba(255,255,255,.12);transition:color .25s,border-color .25s,background .25s}
+    .btn-ghost:hover{color:#fff;border-color:rgba(255,255,255,.28);background:rgba(255,255,255,.05)}
+    .hero-stats{display:flex;gap:0;border-top:1px solid rgba(255,255,255,.08);margin-top:48px;padding-top:32px}
+    .hero-stat{flex:1;padding:0 32px 0 0;border-right:1px solid rgba(255,255,255,.06)}
+    .hero-stat:last-child{border-right:none;padding-left:32px}
+    .hero-stat:first-child{padding-left:0}
+    .hero-stat-num{font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:700;color:#fff;line-height:1}
+    .hero-stat-label{font-size:.72rem;color:rgba(255,255,255,.35);margin-top:6px;letter-spacing:.04em}
+    .breadcrumb{display:flex;align-items:center;gap:8px;font-size:.75rem;color:rgba(255,255,255,.35);margin-bottom:40px}
+    .breadcrumb a{color:rgba(255,255,255,.35);transition:color .2s}.breadcrumb a:hover{color:rgba(255,255,255,.7)}
+    .breadcrumb-sep{color:rgba(255,255,255,.18)}
+    .breadcrumb-cur{color:rgba(255,255,255,.65)}
+
+    /* ── CATALOGUE ── */
+    .catalogue{padding:72px 0 100px}
+
+    /* Category block */
+    .cat-block{margin-bottom:80px}
+    .cat-block:last-child{margin-bottom:0}
+    .cat-header{display:flex;align-items:center;gap:20px;margin-bottom:40px}
+    .cat-line{flex:1;height:1px;background:linear-gradient(to right,var(--border-gold),transparent)}
+    .cat-badge{display:inline-flex;align-items:center;gap:10px;background:var(--navy);color:#fff;font-size:.7rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;padding:8px 18px;border-radius:100px}
+    .cat-badge-dot{width:6px;height:6px;border-radius:50%;background:var(--gold-light);flex-shrink:0}
+    .cat-count-chip{font-size:.68rem;font-weight:600;color:var(--muted);letter-spacing:.06em;white-space:nowrap}
+
+    /* Product cards — HORIZONTAL */
+    .products-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+    .prod-card{background:#fff;border:1px solid var(--border);border-radius:18px;overflow:hidden;display:flex;flex-direction:row;box-shadow:var(--shadow-sm);transition:transform .4s var(--ease-expo),box-shadow .4s,border-color .3s;position:relative}
+    .prod-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--gold);opacity:0;transition:opacity .3s;border-radius:2px 0 0 2px}
+    .prod-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-md);border-color:var(--border-gold)}
+    .prod-card:hover::before{opacity:1}
+    .prod-img{width:180px;min-width:180px;background:var(--cream-2);overflow:hidden;flex-shrink:0}
+    .prod-img img{width:100%;height:100%;object-fit:contain;padding:20px;transition:transform .5s var(--ease-expo)}
+    .prod-card:hover .prod-img img{transform:scale(1.06)}
+    .prod-img.bg-dark{background:#0f1117}
+    .prod-img.bg-dark img{object-fit:cover;padding:0}
+    .prod-body{padding:24px 28px;flex:1;display:flex;flex-direction:column;min-width:0}
+    .prod-tag{display:inline-flex;align-items:center;gap:5px;font-size:.62rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+    .prod-name{font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-weight:700;color:var(--navy);line-height:1.15;margin-bottom:10px}
+    .prod-desc{font-size:.8rem;color:var(--muted);line-height:1.7;margin-bottom:16px;flex:1}
+    .prod-specs{display:grid;grid-template-columns:1fr 1fr;gap:4px 12px;margin-bottom:18px}
+    .spec-row{display:flex;flex-direction:column;padding:5px 0;border-bottom:1px solid var(--border)}
+    .spec-row:nth-last-child(-n+2){border-bottom:none}
+    .spec-key{font-size:.65rem;font-weight:600;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;margin-bottom:2px}
+    .spec-val{font-size:.8rem;font-weight:700;color:var(--navy)}
+    .prod-footer{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:auto}
+    .prod-link{display:inline-flex;align-items:center;gap:5px;font-size:.75rem;font-weight:700;color:var(--gold);transition:gap .2s}
+    .prod-link:hover{gap:9px}
+    .prod-link svg{width:11px;height:11px}
+    .ref-badge{font-size:.62rem;font-weight:600;color:var(--muted);background:var(--cream-2);padding:3px 9px;border-radius:100px;letter-spacing:.04em;white-space:nowrap}
+
+    /* CTA Devis */
+    .devis-cta{background:var(--navy);border-radius:24px;padding:52px 56px;display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap;margin-top:72px;position:relative;overflow:hidden}
+    .devis-cta::before{content:'';position:absolute;inset:0;background-image:url("motif%20hichem.png");background-size:280px;opacity:.04;pointer-events:none}
+    .devis-cta-text{position:relative}
+    .devis-cta-text h3{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:700;color:#fff;margin-bottom:10px}
+    .devis-cta-text p{font-size:.88rem;color:rgba(255,255,255,.45);line-height:1.7;max-width:420px}
+    .devis-cta-actions{display:flex;gap:12px;flex-wrap:wrap;flex-shrink:0;position:relative}
+
+    /* FOOTER */
+    footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.06);padding:60px 0 28px}
+    .footer-top{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:48px;padding-bottom:44px;border-bottom:1px solid rgba(255,255,255,.07);margin-bottom:28px}
+    .footer-brand img{height:40px;margin-bottom:16px}
+    .footer-brand p{font-size:.86rem;color:rgba(255,255,255,.38);line-height:1.75;max-width:240px}
+    .footer-col h4{font-size:.65rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:20px}
+    .footer-col li{margin-bottom:10px}
+    .footer-col a{font-size:.84rem;color:rgba(255,255,255,.38);transition:color .2s}
+    .footer-col a:hover{color:rgba(255,255,255,.75)}
+    .footer-bottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px}
+    .footer-bottom p{font-size:.76rem;color:rgba(255,255,255,.22)}
+    .footer-links{display:flex;gap:22px}
+    .footer-links a{font-size:.75rem;color:rgba(255,255,255,.22);transition:color .2s}
+    .footer-links a:hover{color:rgba(255,255,255,.5)}
+
+    /* WA float */
+    .wa-float{position:fixed;bottom:28px;right:28px;z-index:100;background:#25d366;box-shadow:0 6px 28px rgba(37,211,102,.4);display:flex;align-items:center;gap:10px;border-radius:100px;padding:0 20px 0 0;height:54px;overflow:hidden;transition:transform .3s,box-shadow .3s}
+    .wa-float:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(37,211,102,.52)}
+    .wa-float svg{width:24px;height:24px;color:#fff}
+    .wa-float-icon{width:54px;height:54px;flex-shrink:0;display:flex;align-items:center;justify-content:center}
+    .wa-float-label{font-size:.78rem;font-weight:700;color:#fff;white-space:nowrap;opacity:0;transform:translateX(-8px);transition:opacity .3s,transform .3s;pointer-events:none}
+    .wa-float:hover .wa-float-label{opacity:1;transform:none}
+
+    /* Back to top */
+    .back-top{position:fixed;bottom:28px;left:28px;z-index:100;width:46px;height:46px;background:rgba(14,27,46,.85);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.12);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:0;transform:translateY(12px);transition:opacity .35s,transform .35s;pointer-events:none}
+    .back-top.visible{opacity:1;transform:none;pointer-events:auto}
+    .back-top:hover{background:var(--navy-2)}
+    .back-top svg{width:15px;height:15px;color:rgba(255,255,255,.65)}
+
+    /* ── PRINT ── */
+    @media print{
+      body::before,.nav-wrap,.wa-float,.back-top,#cookie-banner,.hero-actions,.devis-cta,footer{display:none!important}
+      .reveal,.reveal.visible{opacity:1!important;transform:none!important;filter:none!important;transition:none!important}
+      html,body{background:#fff!important;font-size:14px}
+      .hero{padding:0!important;background:#fff!important;border-bottom:2px solid #0e1b2e}
+      .hero-bg{display:none}
+      .print-header{display:flex!important}
+      .hero-stats{border-top:1px solid #e8e0d4;padding-top:16px;margin-top:16px}
+      .hero-stat-num{color:#0e1b2e!important;font-size:1.6rem}
+      .hero-stat-label{color:#6b6457!important}
+      .breadcrumb{display:none}
+      .hero-text h1{color:#0e1b2e!important;font-size:2rem}
+      .hero-sub{color:#6b6457!important}
+      .catalogue{padding:24px 0 40px}
+      .cat-block{margin-bottom:40px;page-break-inside:avoid}
+      .cat-badge{background:#0e1b2e!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+      .products-grid{grid-template-columns:1fr 1fr;gap:12px}
+      .prod-card{box-shadow:none!important;border:1px solid #ddd!important;page-break-inside:avoid;transform:none!important}
+      .prod-card::before{display:none}
+      .prod-img{width:140px;min-width:140px}
+      .prod-body{padding:16px 20px}
+      .prod-link,.ref-badge{font-size:.65rem}
+      @page{margin:12mm 14mm;size:A4}
+    }
+    .print-header{display:none;align-items:center;justify-content:space-between;padding:20px 0 18px;margin-bottom:8px}
+    .print-header img{height:36px}
+    .print-header-info{text-align:right;font-size:.72rem;color:#6b6457;line-height:1.6}
+
+    /* ── RESPONSIVE ── */
+    @media(max-width:1024px){.products-grid{grid-template-columns:1fr}}
+    @media(max-width:768px){
+      .nav-links,.nav-cta{display:none}
+      .hamburger{display:flex}
+      .navbar{padding:10px 20px;gap:0;justify-content:space-between;width:92vw}
+      .hero-inner{flex-direction:column;align-items:flex-start}
+      .hero-actions{width:100%}
+      .hero-stats{flex-wrap:wrap;gap:20px}
+      .hero-stat{flex:none;width:calc(50% - 10px);border-right:none!important;padding:0!important}
+      .footer-top{grid-template-columns:1fr}
+      .footer-bottom{flex-direction:column;align-items:flex-start}
+      .devis-cta{padding:36px 28px}
+    }
+    @media(max-width:520px){
+      .prod-img{width:130px;min-width:130px}
+      .prod-body{padding:16px 18px}
+    }
+  </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L894LQPZLV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-L894LQPZLV');
+  </script>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WRGHPS4L"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  <!-- NAVBAR -->
+  <div class="nav-wrap">
+    <nav class="navbar">
+      <a href="index.html" class="nav-logo"><img src="logo%20adonis-01.png" alt="Adonis France" /></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+        <li><a href="catalogue.html" class="active">Catalogue</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <a href="index.html#contact" class="nav-cta">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:13px;height:13px"><path d="M4 4h8c.6 0 1 .4 1 1v5c0 .6-.4 1-1 1H4c-.6 0-1-.4-1-1V5c0-.6.4-1 1-1z"/><polyline points="13,5 8,9 3,5"/></svg>
+        Demander un devis
+      </a>
+      <div class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </div>
+  <div class="mob-menu" id="mob-menu">
+    <a href="index.html" onclick="closeMob()">Accueil</a>
+    <a href="a-propos.html" onclick="closeMob()">À propos</a>
+    <a href="catalogue.html" onclick="closeMob()">Catalogue</a>
+    <a href="index.html#contact" onclick="closeMob()">Contact</a>
+    <a href="index.html#contact" class="nav-cta" onclick="closeMob()">Demander un devis</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Accueil</a>
+        <span class="breadcrumb-sep">›</span>
+        <span class="breadcrumb-cur">Catalogue</span>
+      </div>
+      <div class="hero-inner">
+        <div class="hero-text">
+          <p class="hero-eyebrow">Adonis France — Grossiste B2B</p>
+          <h1>Catalogue<br>Produits 2026</h1>
+          <p class="hero-sub">Import direct depuis la Chine. Tarifs grossiste réservés aux professionnels — sur devis uniquement.</p>
+        </div>
+        <div class="hero-actions">
+          <button class="btn-primary" onclick="window.print()">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="width:15px;height:15px"><path d="M5 7V3h10v4M5 15H3a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-2M5 11h10v6H5z"/></svg>
+            Imprimer / PDF
+          </button>
+          <a href="index.html#contact" class="btn-ghost">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="width:13px;height:13px"><path d="M4 4h8c.6 0 1 .4 1 1v5c0 .6-.4 1-1 1H4c-.6 0-1-.4-1-1V5c0-.6.4-1 1-1z"/><polyline points="13,5 8,9 3,5"/></svg>
+            Demander un devis
+          </a>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-num">11</div>
+          <div class="hero-stat-label">Références</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">3</div>
+          <div class="hero-stat-label">Catégories</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">20<span style="font-size:1.1rem">+</span></div>
+          <div class="hero-stat-label">Ans d'expérience</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">B2B</div>
+          <div class="hero-stat-label">Uniquement</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATALOGUE -->
+  <main class="catalogue">
+    <div class="container">
+
+      <!-- PRINT HEADER (visible en impression uniquement) -->
+      <div class="print-header">
+        <img src="logo%20adonis-01.png" alt="Adonis France" />
+        <div class="print-header-info">
+          Adonis France SARL — SIRET 489 719 112 00026<br>
+          71 Av. Louis Roche, 92230 Gennevilliers<br>
+          07 62 18 58 71 — adonisfranceabdellah@gmail.com
+        </div>
+      </div>
+
+      <!-- ══ CHARBON POUR ENCENS ══ -->
+      <div class="cat-block">
+        <div class="cat-header">
+          <div class="cat-badge">
+            <span class="cat-badge-dot"></span>
+            Charbon pour encens
+          </div>
+          <div class="cat-count-chip">3 références</div>
+          <div class="cat-line"></div>
+        </div>
+        <div class="products-grid">
+
+          <!-- Charbon 33mm -->
+          <div class="prod-card reveal">
+            <div class="prod-img">
+              <img src="Charbon%20golden/charbon-33mm-boite.jpg.jpg" alt="Charbon Golden River 33mm" loading="lazy" />
+            </div>
+            <div class="prod-body">
+              <div class="prod-tag">Charbon rapide</div>
+              <div class="prod-name">Golden River — 33 mm</div>
+              <div class="prod-desc">Combustion rapide et longue durée. Allumage en 30 secondes. Idéal pour les petits encensoirs.</div>
+              <div class="prod-specs">
+                <div class="spec-row"><span class="spec-key">Diamètre</span><span class="spec-val">33 mm</span></div>
+                <div class="spec-row"><span class="spec-key">Contenu boîte</span><span class="spec-val">10 rouleaux × 10 past.</span></div>
+                <div class="spec-row"><span class="spec-key">Boîtes / carton</span><span class="spec-val">24 boîtes</span></div>
+                <div class="spec-row"><span class="spec-key">Cartons / palette</span><span class="spec-val">30 cartons</span></div>
+              </div>
+              <div class="prod-footer">
+                <a href="charbon-33mm.html" class="prod-link">Voir la fiche produit <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M8 3l5 5-5 5"/></svg></a>
+                <span class="ref-badge">Réf. GR-33</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Charbon 40mm -->
+          <div class="prod-card reveal reveal-delay-1">
+            <div class="prod-img">
+              <img src="Charbon%20golden/charbon-40mm-ouvert.jpg.png" alt="Charbon Golden River 40mm" loading="lazy" />
+            </div>
+            <div class="prod-body">
+              <div class="prod-tag">Grand format</div>
+              <div class="prod-name">Golden River — 40 mm</div>
+              <div class="prod-desc">Grand diamètre pour les gros encensoirs. Combustion prolongée, chaleur homogène sur toute la durée.</div>
+              <div class="prod-specs">
+                <div class="spec-row"><span class="spec-key">Diamètre</span><span class="spec-val">40 mm</span></div>
+                <div class="spec-row"><span class="spec-key">Contenu boîte</span><span class="spec-val">10 rouleaux × 10 past.</span></div>
+                <div class="spec-row"><span class="spec-key">Boîtes / carton</span><span class="spec-val">24 boîtes</span></div>
+                <div class="spec-row"><span class="spec-key">Cartons / palette</span><span class="spec-val">30 cartons</span></div>
+              </div>
+              <div class="prod-footer">
+                <a href="charbon-40mm.html" class="prod-link">Voir la fiche produit <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M8 3l5 5-5 5"/></svg></a>
+                <span class="ref-badge">Réf. GR-40</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Charbon Coco -->
+          <div class="prod-card reveal reveal-delay-2">
+            <div class="prod-img">
+              <img src="Charbon%20golden/Charbon%20goldencharbon-coco-boite.jpg.png" alt="Charbon Coco XL" loading="lazy" />
+            </div>
+            <div class="prod-body">
+              <div class="prod-tag">Naturel Premium</div>
+              <div class="prod-name">Coco XL — Charbon naturel</div>
+              <div class="prod-desc">Fabriqué à partir de coque de noix de coco. Sans odeur chimique, combustion longue et régulière. Format cubes 26×26×26 mm.</div>
+              <div class="prod-specs">
+                <div class="spec-row"><span class="spec-key">Format</span><span class="spec-val">Cubes 26 × 26 × 26 mm</span></div>
+                <div class="spec-row"><span class="spec-key">Poids boîte</span><span class="spec-val">1 kg</span></div>
+                <div class="spec-row"><span class="spec-key">Boîtes / carton</span><span class="spec-val">12 boîtes</span></div>
+                <div class="spec-row"><span class="spec-key">Type</span><span class="spec-val">Noix de coco naturel</span></div>
+              </div>
+              <div class="prod-footer">
+                <a href="charbon-coco.html" class="prod-link">Voir la fiche produit <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M8 3l5 5-5 5"/></svg></a>
+                <span class="ref-badge">Réf. COCO-XL</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ══ THÉS EN VRAC ══ -->
+      <div class="cat-block">
+        <div class="cat-header">
+          <div class="cat-badge" style="background:#0d2b1a">
+            <span class="cat-badge-dot" style="background:#4caf6e"></span>
+            Thés en vrac
+          </div>
+          <div class="cat-count-chip">4 références</div>
+          <div class="cat-line"></div>
+        </div>
+        <div class="products-grid">
+
+          <!-- Al Afdal Chunmee -->
+          <div class="prod-card reveal">
+            <div class="prod-img">
+              <img src="AFS%20PHOTOS/AFDAL/Al%20Afdal-200G.png" alt="Al Afdal — Thé Chunmee" loading="lazy" />
+            </div>
+            <div class="prod-body">
+              <div class="prod-tag">Chunmee 41022AAAA</div>
+              <div class="prod-name">Al Afdal — Chunmee</div>
+              <div class="prod-desc">Thé vert Chunmee de qualité supérieure. Feuilles torsadées à la main, arôme légèrement fumé, saveur douce.</div>
+              <div class="prod-specs">
+                <div class="spec-row"><span class="spec-key">Contenu</span><span class="spec-val">200 g / boîte</span></div>
+                <div class="spec-row"><span class="spec-key">Boîtes / carton</span><span class="spec-val">60 boîtes</span></div>
+                <div class="spec-row"><span class="spec-key">Origine</span><span class="spec-val">Chine</span></div>
+                <div class="spec-row"><span class="spec-key">Type</span><span class="spec-val">Thé vert Chunmee</span></div>
+              </div>
+              <div class="prod-footer">
+                <a href="afdal-chunmee.html" class="prod-link">Voir la fiche produit <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M8 3l5 5-5 5"/></svg></a>
+                <span class="ref-badge">Réf. AFA-CHN</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- AON Chunmee -->
+          <div class="prod-card reveal reveal-delay-1">
+            <div class="prod-img">
+              <img src="AFS%20PHOTOS/Ahl%20OUED%20NOUN%20O/Ahl%20Oued%20Noun%2041022-200g.png" alt="Ahl Oued Noun — Chunmee" loading="lazy" />
+            </div>
+            <div class="prod-body">
+              <div class="prod-tag">Chunmee 41022AAAAA</div>
+              <div class="prod-name">Ahl Oued Noun — Chunmee</div>
+              <div class="prod-desc">Thé vert Chunmee de qualité constante, reconnu pour sa régularité et son goût caractéristique doux et équilibré.</div>
+              <div class="prod-specs">
+                <div class="spec-row"><span class="spec-key">Contenu</span><span class="spec-val">200 g / boîte</span></div>
+                <div class="spec-row"><span class="spec-key">Boîtes / carton</span><span class="spec-val">60 boîtes</span></div>
+                <div class="spec-row"><span class="spec-key">Origine</span><span class="spec-val">Chine</span></div>
+                <div class="spec-row"><span class="spec-key">Type</span><span class="spec-val">Thé vert Chunmee</span></div>
+              </div>
+              <div class="prod-footer">
+                <a href="aon-chunmee.html" class="prod-link">Voir la fiche produit <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M8 3l5 5-5 5"/></svg></a>
+                <span class="ref-badge">Réf. AON-CHN</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Al Kasbah Gunpowder -->
+          <div class="prod-card reveal reveal-delay-2">
+            <div class="prod-img">
+              <img src="AFS%20PHOTOS/KASBAH/El%20Kasbah%20Tea-200G.png" alt="Al Kasbah — Gunpowder" loading="lazy" />
+            </div>
+            <div class="prod-body">
+              <div class="prod-tag">Gunpowder 3505AAAAA</div>
+              <div class="prod-name">Al Kasbah — Gunpowder</div>
+              <div class="prod-desc">Thé Gunpowder enroulé en billes. Infusion riche et corsée, idéal pour le thé à la menthe traditionnel.</div>
+              <div class="prod-specs">
+                <div class="spec-row"><span class="spec-key">Contenu</span><span class="spec-val">200 g / boîte</span></div>
+                <div class="spec-row"><span class="spec-key">Boîtes / carton</span><span class="spec-val">60 boîtes</span></div>
+                <div class="spec-row"><span class="spec-key">Origine</span><span class="spec-val">Chine — Zhejiang</span></div>
+                <div class="spec-row"><span class="spec-key">Type</span><span class="spec-val">Thé vert Gunpowder</span></div>
+              </div>
+              <div class="prod-footer">
+                <a href="kasbah-gunpowder.html" class="prod-link">Voir la fiche produit <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M8 3l5 5-5 5"/></svg></a>
+                <span class="ref-badge">Réf. KAS-GNP</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- AON Gunpowder -->
+          <div class="prod-card reveal reveal-delay-3">
+            <div class="prod-img">
+              <img src="AFS%20PHOTOS/Ahl%20OUED%20NOUN%20R/Ahl%20Oued%20Noun-200G.png" alt="Ahl Oued Noun — Gunpowder" loading="lazy" />
+            </div>
+            <div class="prod-body">
+              <div class="prod-tag">Gunpowder 3505AAAAA</div>
+              <div class="prod-name">Ahl Oued Noun — Gunpowder</div>
+              <div class="prod-desc">Gunpowder de la marque Ahl Oued Noun. Billes roulées à la main, parfum prononcé, liqueur ambrée.</div>
+              <div class="prod-specs">
+                <div class="spec-row"><span class="spec-key">Contenu</span><span class="spec-val">200 g / boîte</span></div>
+                <div class="spec-row"><span class="spec-key">Boîtes / carton</span><span class="spec-val">60 boîtes</span></div>
+                <div class="spec-row"><span class="spec-key">Origine</span><span class="spec-val">Chine — Zhejiang</span></div>
+                <div class="spec-row"><span class="spec-key">Type</span><span class="spec-val">Thé vert Gunpowder</span></div>
+              </div>
+              <div class="prod-footer">
+                <a href="aon-gunpowder.html" class="prod-link">Voir la fiche produit <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M8 3l5 5-5 5"/></svg></a>
+                <span class="ref-badge">Réf. AON-GNP</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ══ EMBALLAGE & CONDITIONNEMENT ══ -->
+      <div class="cat-block">
+        <div class="cat-header">
+          <div class="cat-badge" style="background:#1a1207">
+            <span class="cat-badge-dot" style="background:#d4a84e"></span>
+            Emballage &amp; Conditionnement
+          </div>
+          <div class="cat-count-chip">4 références</div>
+          <div class="cat-line"></div>
+        </div>
+        <div class="products-grid">
+
+          <!-- SAC S — Charbon -->
+          <div class="prod-card reveal">
+            <div class="prod-img bg-dark">
+              <img src="AFS%20PHOTOS/SAC%20S/AFS%20PHOTOSsac-charbon-face.jpg.png" alt="Sac PP — Charbon" loading="lazy" />
+            </div>
+            <div class="prod-body">
+              <div class="prod-tag">Sac tissé PP — Petit</div>
+              <div class="prod-name">Sac S — Charbon</div>
+              <div class="prod-desc">Sac en polypropylène tissé pour le conditionnement du charbon. Résistant, personnalisable à l'impression.</div>
+              <div class="prod-specs">
+                <div class="spec-row"><span class="spec-key">Dimensions</span><span class="spec-val">45 × 25 × 48,5 cm</span></div>
+                <div class="spec-row"><span class="spec-key">Matière</span><span class="spec-val">Polypropylène (PP)</span></div>
+                <div class="spec-row"><span class="spec-key">Usage</span><span class="spec-val">Charbon en vrac</span></div>
+                <div class="spec-row"><span class="spec-key">Impression</span><span class="spec-val">Personnalisable</span></div>
+              </div>
+              <div class="prod-footer">
+                <a href="sacs.html" class="prod-link">Voir la fiche produit <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M8 3l5 5-5 5"/></svg></a>
+                <span class="ref-badge">Réf. SAC-S</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- SAC M — Thé Chunmee -->
+          <div class="prod-card reveal reveal-delay-1">
+            <div class="prod-img bg-dark">
+              <img src="AFS%20PHOTOS/SAC%20M/AFS%20PHOTOSsac-the-chunmee-face.jpg.png" alt="Sac PP — Thé Chunmee" loading="lazy" />
+            </div>
+            <div class="prod-body">
+              <div class="prod-tag">Sac tissé PP — Moyen</div>
+              <div class="prod-name">Sac M — Thé Chunmee</div>
+              <div class="prod-desc">Sac en polypropylène tissé pour le conditionnement du thé Chunmee en vrac. Impression personnalisable.</div>
+              <div class="prod-specs">
+                <div class="spec-row"><span class="spec-key">Dimensions</span><span class="spec-val">59 × 30 × 47 cm</span></div>
+                <div class="spec-row"><span class="spec-key">Matière</span><span class="spec-val">Polypropylène (PP)</span></div>
+                <div class="spec-row"><span class="spec-key">Usage</span><span class="spec-val">Thé Chunmee</span></div>
+                <div class="spec-row"><span class="spec-key">Impression</span><span class="spec-val">Personnalisable</span></div>
+              </div>
+              <div class="prod-footer">
+                <a href="sacs.html" class="prod-link">Voir la fiche produit <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M8 3l5 5-5 5"/></svg></a>
+                <span class="ref-badge">Réf. SAC-M</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- SAC L — Thé Gunpowder -->
+          <div class="prod-card reveal reveal-delay-2">
+            <div class="prod-img bg-dark">
+              <img src="AFS%20PHOTOS/SAC%20L/AFS%20PHOTOSsac-the-gunpowder.jpg.png" alt="Sac PP — Thé Gunpowder" loading="lazy" />
+            </div>
+            <div class="prod-body">
+              <div class="prod-tag">Sac tissé PP — Large</div>
+              <div class="prod-name">Sac L — Thé Gunpowder</div>
+              <div class="prod-desc">Grand sac en polypropylène tissé pour le conditionnement du thé Gunpowder en vrac. Fort grammage, résistant.</div>
+              <div class="prod-specs">
+                <div class="spec-row"><span class="spec-key">Dimensions</span><span class="spec-val">66 × 55 × 30 cm</span></div>
+                <div class="spec-row"><span class="spec-key">Matière</span><span class="spec-val">Polypropylène (PP)</span></div>
+                <div class="spec-row"><span class="spec-key">Usage</span><span class="spec-val">Thé Gunpowder</span></div>
+                <div class="spec-row"><span class="spec-key">Impression</span><span class="spec-val">Personnalisable</span></div>
+              </div>
+              <div class="prod-footer">
+                <a href="sacs.html" class="prod-link">Voir la fiche produit <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M8 3l5 5-5 5"/></svg></a>
+                <span class="ref-badge">Réf. SAC-L</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- SAC XL — Grand conditionnement -->
+          <div class="prod-card reveal reveal-delay-3">
+            <div class="prod-img bg-dark">
+              <img src="AFS%20PHOTOS/SAC%20XL/SAC%20XL.png" alt="Sac PP XL — Grand conditionnement" loading="lazy" />
+            </div>
+            <div class="prod-body">
+              <div class="prod-tag">Sac tissé PP — Extra Large</div>
+              <div class="prod-name">Sac XL — Grand format</div>
+              <div class="prod-desc">Le plus grand de la gamme. PP tissé 190 g/m² laminé, fermeture éclair #10, double poignée. Conçu pour les volumes importants.</div>
+              <div class="prod-specs">
+                <div class="spec-row"><span class="spec-key">Dimensions</span><span class="spec-val">80 × 59 × 29 cm</span></div>
+                <div class="spec-row"><span class="spec-key">Matière</span><span class="spec-val">PP 190 g/m² laminé</span></div>
+                <div class="spec-row"><span class="spec-key">Fermeture</span><span class="spec-val">Fermeture éclair #10</span></div>
+                <div class="spec-row"><span class="spec-key">Conditionnement</span><span class="spec-val">12 pcs / douzaine</span></div>
+              </div>
+              <div class="prod-footer">
+                <a href="sacs.html" class="prod-link">Voir la fiche produit <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M8 3l5 5-5 5"/></svg></a>
+                <span class="ref-badge">Réf. SAC-XL</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- CTA DEVIS -->
+      <div class="devis-cta reveal">
+        <div class="devis-cta-text">
+          <h3>Tarifs réservés aux professionnels</h3>
+          <p>Les prix grossiste sont communiqués sur demande. Envoyez votre demande de devis pour recevoir notre grille tarifaire complète sous 24 h.</p>
+        </div>
+        <div class="devis-cta-actions">
+          <a href="index.html#contact" class="btn-primary">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="width:13px;height:13px"><path d="M4 4h8c.6 0 1 .4 1 1v5c0 .6-.4 1-1 1H4c-.6 0-1-.4-1-1V5c0-.6.4-1 1-1z"/><polyline points="13,5 8,9 3,5"/></svg>
+            Demander un devis
+          </a>
+          <a href="tel:0762185871" class="btn-ghost">07 62 18 58 71</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="logo%20adonis-01.png" alt="Adonis France" />
+          <p>B2B — Import direct depuis la Chine depuis 2006. Distribution France et Europe.</p>
+          <div style="margin-top:16px;display:flex;flex-direction:column;gap:6px;">
+            <a href="tel:0762185871" style="font-size:.8rem;color:rgba(255,255,255,.38)">07 62 18 58 71</a>
+            <span style="font-size:.8rem;color:rgba(255,255,255,.38)">71 Av. Louis Roche, 92230 Gennevilliers</span>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Produits</h4>
+          <ul>
+            <li><a href="charbon-33mm.html">Charbon 33mm</a></li>
+            <li><a href="charbon-40mm.html">Charbon 40mm</a></li>
+            <li><a href="charbon-coco.html">Charbon Coco XL</a></li>
+            <li><a href="afdal-chunmee.html">Al Afdal — Chunmee</a></li>
+            <li><a href="aon-chunmee.html">Ahl Oued Noun — Chunmee</a></li>
+            <li><a href="kasbah-gunpowder.html">Al Kasbah — Gunpowder</a></li>
+            <li><a href="aon-gunpowder.html">Ahl Oued Noun — Gunpowder</a></li>
+            <li><a href="sacs.html">Sacs tissés PP</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="a-propos.html">À propos</a></li>
+            <li><a href="catalogue.html">Catalogue</a></li>
+            <li><a href="index.html#contact">Contact &amp; Devis</a></li>
+            <li><a href="mentions-legales.html">Mentions légales</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Adonis France — Tous droits réservés</p>
+        <div class="footer-links">
+          <a href="mentions-legales.html">Mentions légales</a>
+          <a href="mailto:adonisfranceabdellah@gmail.com">adonisfranceabdellah@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WA FLOAT -->
+  <a href="https://wa.me/33762185871" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <div class="wa-float-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg></div>
+    <span class="wa-float-label">WhatsApp</span>
+  </a>
+
+  <!-- BACK TO TOP -->
+  <button class="back-top" id="back-top" aria-label="Retour en haut" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 12V4M4 8l4-4 4 4"/></svg>
+  </button>
+
+  <!-- BANNIERE COOKIES -->
+  <div id="cookie-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:rgba(14,27,46,.97);backdrop-filter:blur(12px);border-top:1px solid rgba(255,255,255,.1);padding:20px 24px;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;">
+    <p style="font-size:.82rem;color:rgba(255,255,255,.65);line-height:1.6;margin:0;max-width:680px">
+      Nous utilisons des cookies analytiques (Google Analytics) pour mesurer l'audience du site et améliorer votre expérience. Aucune donnée personnelle n'est vendue.
+      <a href="mentions-legales.html" style="color:#d4a84e;text-decoration:underline;text-underline-offset:3px">En savoir plus</a>
+    </p>
+    <div style="display:flex;gap:10px;flex-shrink:0">
+      <button onclick="cookieRefuse()" style="background:transparent;border:1px solid rgba(255,255,255,.2);color:rgba(255,255,255,.6);font-size:.78rem;font-weight:600;padding:9px 18px;border-radius:100px;cursor:pointer">Refuser</button>
+      <button onclick="cookieAccept()" style="background:#b8892b;border:none;color:#0e1b2e;font-size:.78rem;font-weight:700;padding:9px 18px;border-radius:100px;cursor:pointer">Accepter</button>
+    </div>
+  </div>
+
+  <script>
+    // Cookie banner
+    (function(){
+      var c=localStorage.getItem('adonis_cookie_consent');
+      if(!c){document.getElementById('cookie-banner').style.display='flex';}
+      else if(c==='refused'){window['ga-disable-G-L894LQPZLV']=true;}
+    })();
+    function cookieAccept(){localStorage.setItem('adonis_cookie_consent','accepted');document.getElementById('cookie-banner').style.display='none';}
+    function cookieRefuse(){localStorage.setItem('adonis_cookie_consent','refused');window['ga-disable-G-L894LQPZLV']=true;document.getElementById('cookie-banner').style.display='none';}
+
+    // Hamburger
+    const ham=document.getElementById('hamburger'),mob=document.getElementById('mob-menu');
+    let menuOpen=false;
+    ham.addEventListener('click',()=>{menuOpen=!menuOpen;ham.classList.toggle('open',menuOpen);mob.style.display=menuOpen?'flex':'none';document.body.style.overflow=menuOpen?'hidden':''});
+    function closeMob(){menuOpen=false;ham.classList.remove('open');mob.style.display='none';document.body.style.overflow=''}
+
+    // Reveal on scroll
+    const io=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}})},{threshold:0.08,rootMargin:'0px 0px -32px 0px'});
+    document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+    // Back to top
+    const bt=document.getElementById('back-top');
+    window.addEventListener('scroll',()=>{bt.classList.toggle('visible',window.scrollY>400)},{passive:true});
+  </script>
+</body>
+</html>
