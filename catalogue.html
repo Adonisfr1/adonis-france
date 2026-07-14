@@ -272,7 +272,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <p class="hero-sub">Import direct depuis la Chine. Tarifs grossiste réservés aux professionnels — sur devis uniquement.</p>
         </div>
         <div class="hero-actions">
-          <button class="btn-primary" onclick="window.print()">
+          <a href="Catalogue%20ADONIS%20FRANCE.pdf" download="Catalogue-Adonis-France-2026.pdf" class="btn-primary">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="width:15px;height:15px"><path d="M10 3v10M5 9l5 5 5-5M3 17h14"/></svg>
+            Télécharger le catalogue
+          </a>
+          <button class="btn-ghost" onclick="window.print()" style="cursor:pointer;background:transparent;border:none;font:inherit">
             <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="width:15px;height:15px"><path d="M5 7V3h10v4M5 15H3a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-2M5 11h10v6H5z"/></svg>
             Imprimer / PDF
           </button>
@@ -707,9 +711,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     ham.addEventListener('click',()=>{menuOpen=!menuOpen;ham.classList.toggle('open',menuOpen);mob.style.display=menuOpen?'flex':'none';document.body.style.overflow=menuOpen?'hidden':''});
     function closeMob(){menuOpen=false;ham.classList.remove('open');mob.style.display='none';document.body.style.overflow=''}
 
-    // Reveal on scroll
+    // Reveal on scroll — force visible immediately for elements in viewport, then observe the rest
+    document.querySelectorAll('.reveal').forEach(el=>el.classList.add('visible'));
     const io=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}})},{threshold:0.08,rootMargin:'0px 0px -32px 0px'});
-    document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+    document.querySelectorAll('.reveal:not(.visible)').forEach(el=>io.observe(el));
 
     // Back to top
     const bt=document.getElementById('back-top');
