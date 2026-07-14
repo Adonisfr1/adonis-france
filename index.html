@@ -18,8 +18,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <meta property="og:locale" content="fr_FR" />
   <meta property="og:title" content="Adonis France — Import B2B &amp; B2C depuis 2006" />
   <meta property="og:description" content="Importateurs directs depuis la Chine depuis 2006. Charbon de bois pour encens, thé vert Chunmee &amp; Gunpowder, sacs tissés PP. Gennevilliers (92)." />
-  <meta property="og:image" content="https://adonis-fr.netlify.app/Charbon%20golden/charbon-33mm-boite.jpg.jpg" />
-  <meta property="og:url" content="https://adonis-fr.netlify.app/" />
+  <meta property="og:image" content="https://adonisfr1.github.io/adonis-france/Charbon%20golden/charbon-33mm-boite.jpg.jpg" />
+  <meta property="og:url" content="https://adonisfr1.github.io/adonis-france/" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -1256,9 +1256,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="contact-form-wrap reveal reveal-delay-2">
           <div class="contact-form">
             <div class="form-title">Envoyer un message</div>
-            <form id="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" onsubmit="handleSubmit(event)" novalidate>
-              <input type="hidden" name="form-name" value="contact" />
-              <p style="display:none"><input name="bot-field" /></p>
+            <form id="contact-form" name="contact" method="POST" onsubmit="handleSubmit(event)" novalidate>
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_template" value="table" />
               <div class="form-row">
                 <div class="form-group">
                   <label for="f-nom">Nom</label>
@@ -1417,7 +1417,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       });
     }, { passive: true });
 
-    // Contact form → Netlify Forms
+    // Contact form → Formsubmit.co (fonctionne sur GitHub Pages)
     function handleSubmit(e) {
       e.preventDefault();
       const nom     = document.getElementById('f-nom').value.trim();
@@ -1435,11 +1435,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       const btn = formEl.querySelector('.btn-submit');
       btn.disabled = true;
       btn.textContent = 'Envoi en cours…';
-      fetch('/', {
+      const data = {};
+      new FormData(formEl).forEach((v, k) => { data[k] = v; });
+      fetch('https://formsubmit.co/ajax/adonisfranceabdellah@gmail.com', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(new FormData(formEl)).toString()
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(data)
       })
+      .then(r => r.json())
       .then(() => {
         formEl.style.display = 'none';
         document.getElementById('form-success').style.display = 'flex';
@@ -1447,7 +1450,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       .catch(() => {
         btn.disabled = false;
         btn.textContent = 'Envoyer ma demande';
-        alert('Erreur lors de l\'envoi. Contactez-nous par WhatsApp.');
+        alert('Erreur lors de l\'envoi. Contactez-nous par WhatsApp ou email.');
       });
     }
   </script>
