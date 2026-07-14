@@ -18,8 +18,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <meta property="og:locale" content="fr_FR" />
   <meta property="og:title" content="Catalogue — Adonis France" />
   <meta property="og:description" content="Catalogue grossiste B2B — charbon pour encens et thés en vrac. Import direct depuis la Chine." />
-  <meta property="og:image" content="https://adonis-fr.netlify.app/logo%20adonis-01.png" />
-  <meta property="og:url" content="https://adonis-fr.netlify.app/catalogue.html" />
+  <meta property="og:image" content="https://adonisfr1.github.io/adonis-france/logo%20adonis-01.png" />
+  <meta property="og:url" content="https://adonisfr1.github.io/adonis-france/catalogue.html" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -181,7 +181,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       .hero-text h1{color:#0e1b2e!important;font-size:2rem}
       .hero-sub{color:#6b6457!important}
       .catalogue{padding:24px 0 40px}
-      .cat-block{margin-bottom:40px;page-break-inside:avoid}
+      .cat-block{margin-bottom:40px}
+      .cat-block+.cat-block{page-break-before:always;margin-top:0}
+      .cat-block:last-child .prod-desc{display:none}
+      .cat-block:last-child .prod-img{width:100px;min-width:100px}
+      .cat-block:last-child .prod-body{padding:10px 14px}
+      .cat-block:last-child .prod-name{font-size:1.1rem;margin-bottom:6px}
+      .cat-block:last-child .prod-specs{margin-bottom:10px}
       .cat-badge{background:#0e1b2e!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
       .products-grid{grid-template-columns:1fr 1fr;gap:12px}
       .prod-card{box-shadow:none!important;border:1px solid #ddd!important;page-break-inside:avoid;transform:none!important}
