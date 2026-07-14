@@ -1,0 +1,1487 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WRGHPS4L');</script>
+<!-- End Google Tag Manager -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adonis France — Import B2B &amp; B2C depuis 2006</title>
+  <meta name="description" content="Adonis France, import direct depuis la Chine depuis 2006, Gennevilliers (92). Charbon de bois pour encens, thé vert Chunmee &amp; Gunpowder, sacs tissés PP. Vente B2B et B2C — particuliers et professionnels bienvenus." />
+    <link rel="icon" type="image/png" href="logo%20adonis-01.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Adonis France" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:title" content="Adonis France — Import B2B &amp; B2C depuis 2006" />
+  <meta property="og:description" content="Importateurs directs depuis la Chine depuis 2006. Charbon de bois pour encens, thé vert Chunmee &amp; Gunpowder, sacs tissés PP. Gennevilliers (92)." />
+  <meta property="og:image" content="https://adonis-fr.netlify.app/Charbon%20golden/charbon-33mm-boite.jpg.jpg" />
+  <meta property="og:url" content="https://adonis-fr.netlify.app/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    /* ── TOKENS ─────────────────────────────────────────────── */
+    :root {
+      --cream:      #fdfbf7;
+      --cream-2:    #f5f1ea;
+      --cream-3:    #ede7da;
+      --navy:       #0e1b2e;
+      --navy-2:     #162540;
+      --navy-3:     #1e334f;
+      --gold:       #b8892b;
+      --gold-light: #d4a84e;
+      --gold-pale:  #f5e8cc;
+      --ink:        #1a1710;
+      --muted:      #6b6457;
+      --border:     rgba(14,27,46,.08);
+      --border-gold:rgba(184,137,43,.22);
+      --ease-expo:  cubic-bezier(0.16, 1, 0.3, 1);
+      --ease-back:  cubic-bezier(0.34, 1.56, 0.64, 1);
+      --ease-smooth:cubic-bezier(0.4, 0, 0.2, 1);
+      --shadow-sm:  0 2px 12px rgba(14,27,46,.06);
+      --shadow-md:  0 8px 40px rgba(14,27,46,.09);
+      --shadow-lg:  0 24px 80px rgba(14,27,46,.12);
+      --shadow-gold:0 8px 32px rgba(184,137,43,.18);
+    }
+
+    /* ── RESET ──────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: var(--ink);
+      background: var(--cream);
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    img  { max-width: 100%; display: block; }
+    a    { text-decoration: none; color: inherit; }
+    ul   { list-style: none; }
+
+    /* ── NOISE OVERLAY ──────────────────────────────────────── */
+    body::before {
+      content: '';
+      position: fixed; inset: 0; z-index: 999;
+      pointer-events: none;
+      opacity: .028;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-size: 200px 200px;
+    }
+
+    /* ── UTILITIES ──────────────────────────────────────────── */
+    .container { width: min(1240px, 90%); margin: 0 auto; }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: .7rem; font-weight: 600;
+      letter-spacing: .18em; text-transform: uppercase;
+      color: var(--gold);
+    }
+    .eyebrow::before {
+      content: ''; display: block; width: 18px; height: 1px; background: currentColor;
+    }
+    .display-heading {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 700;
+      line-height: 1.08;
+      letter-spacing: -.02em;
+      color: var(--navy);
+    }
+    .text-balance { text-wrap: balance; }
+    /* reveal animation */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      filter: blur(4px);
+      transition: opacity .8s var(--ease-expo), transform .8s var(--ease-expo), filter .8s var(--ease-expo);
+    }
+    .reveal.visible { opacity: 1; transform: none; filter: none; }
+    .reveal-delay-1 { transition-delay: .1s; }
+    .reveal-delay-2 { transition-delay: .2s; }
+    .reveal-delay-3 { transition-delay: .3s; }
+    .reveal-delay-4 { transition-delay: .4s; }
+
+    /* ── NAVBAR ─────────────────────────────────────────────── */
+    .nav-wrap {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+      display: flex; justify-content: center;
+      padding: 20px 24px;
+    }
+    .navbar {
+      background: rgba(14,27,46,.88);
+      backdrop-filter: blur(18px) saturate(1.4);
+      -webkit-backdrop-filter: blur(18px) saturate(1.4);
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: 100px;
+      padding: 10px 10px 10px 24px;
+      display: flex; align-items: center; gap: 40px;
+      box-shadow: 0 8px 32px rgba(0,0,0,.28), inset 0 1px 0 rgba(255,255,255,.08);
+      transition: box-shadow .4s var(--ease-smooth);
+    }
+    .nav-logo img { height: 38px; }
+    .nav-links { display: flex; gap: 32px; }
+    .nav-links a {
+      font-size: .82rem; font-weight: 500;
+      color: rgba(255,255,255,.65);
+      letter-spacing: .01em;
+      transition: color .3s var(--ease-smooth);
+    }
+    .nav-links a:hover { color: #fff; }
+    .nav-cta {
+      background: var(--gold);
+      color: var(--navy);
+      font-size: .8rem; font-weight: 700;
+      padding: 10px 22px;
+      border-radius: 100px;
+      display: flex; align-items: center; gap: 8px;
+      transition: background .3s var(--ease-smooth), transform .3s var(--ease-back), box-shadow .3s;
+    }
+    .nav-cta:hover { background: var(--gold-light); transform: scale(1.04); box-shadow: var(--shadow-gold); }
+    .nav-cta:active { transform: scale(.97); }
+    .nav-cta svg { width: 14px; height: 14px; transition: transform .3s var(--ease-back); }
+    .nav-cta:hover svg { transform: translate(2px, -2px); }
+
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; margin-left: auto; }
+    .hamburger span { width: 22px; height: 1.5px; background: #fff; border-radius: 2px; transform-origin: center; transition: transform .35s var(--ease-expo), opacity .35s; display: block; }
+    .hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+    .hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+    /* ── HERO ───────────────────────────────────────────────── */
+    .hero {
+      min-height: 100dvh;
+      background: var(--navy);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-bg-pattern {
+      position: absolute; inset: 0; z-index: 0;
+      background-image: url("motif%20hichem.png");
+      background-size: 380px;
+      opacity: .035;
+      pointer-events: none;
+    }
+    .hero-radial {
+      position: absolute; inset: 0; z-index: 0; pointer-events: none;
+      background: radial-gradient(ellipse 70% 60% at 30% 60%, rgba(184,137,43,.1) 0%, transparent 60%),
+                  radial-gradient(ellipse 50% 50% at 80% 20%, rgba(30,51,79,.8) 0%, transparent 70%);
+    }
+    .hero-left {
+      display: flex; flex-direction: column; justify-content: center;
+      padding: 130px 64px 80px 72px;
+      position: relative; z-index: 1;
+    }
+    .hero-tag {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: rgba(184,137,43,.12);
+      border: 1px solid rgba(184,137,43,.28);
+      color: var(--gold-light);
+      font-size: .7rem; font-weight: 600;
+      letter-spacing: .18em; text-transform: uppercase;
+      padding: 8px 16px;
+      border-radius: 100px;
+      width: fit-content;
+      margin-bottom: 32px;
+    }
+    .hero-tag span { width: 6px; height: 6px; border-radius: 50%; background: var(--gold-light); display: block; animation: pulse-dot 2s ease-in-out infinite; }
+    @keyframes pulse-dot { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.4;transform:scale(.7)} }
+
+    .hero-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(3rem, 5.5vw, 5rem);
+      font-weight: 700;
+      line-height: 1.05;
+      letter-spacing: -.03em;
+      color: #fff;
+      margin-bottom: 28px;
+    }
+    .hero-title .accent { color: var(--gold-light); font-style: italic; }
+    .hero-desc {
+      color: rgba(255,255,255,.55);
+      font-size: 1rem; font-weight: 400;
+      line-height: 1.75;
+      max-width: 400px;
+      margin-bottom: 44px;
+    }
+    .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 56px; }
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 12px;
+      background: var(--gold);
+      color: var(--navy);
+      font-size: .85rem; font-weight: 700;
+      padding: 14px 18px 14px 24px;
+      border-radius: 100px;
+      transition: background .3s var(--ease-smooth), transform .3s var(--ease-back), box-shadow .3s;
+    }
+    .btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: var(--shadow-gold); }
+    .btn-primary:active { transform: scale(.98); }
+    .btn-primary .icon-circle {
+      width: 32px; height: 32px; border-radius: 50%;
+      background: rgba(14,27,46,.15);
+      display: flex; align-items: center; justify-content: center;
+      transition: transform .3s var(--ease-back);
+    }
+    .btn-primary:hover .icon-circle { transform: translate(2px,-2px) scale(1.1); }
+    .btn-ghost {
+      display: inline-flex; align-items: center; gap: 8px;
+      color: rgba(255,255,255,.6);
+      font-size: .85rem; font-weight: 500;
+      padding: 14px 24px;
+      border-radius: 100px;
+      border: 1px solid rgba(255,255,255,.12);
+      transition: color .3s, border-color .3s, background .3s;
+    }
+    .btn-ghost:hover { color: #fff; border-color: rgba(255,255,255,.3); background: rgba(255,255,255,.05); }
+
+    .hero-metrics {
+      display: flex; gap: 0;
+      border-top: 1px solid rgba(255,255,255,.08);
+      padding-top: 40px;
+    }
+    .metric {
+      padding-right: 32px; margin-right: 32px;
+      border-right: 1px solid rgba(255,255,255,.08);
+    }
+    .metric:last-child { border-right: none; }
+    .metric-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.4rem; font-weight: 700;
+      color: var(--gold-light);
+      line-height: 1;
+    }
+    .metric-label { font-size: .72rem; color: rgba(255,255,255,.4); margin-top: 4px; text-transform: uppercase; letter-spacing: .1em; font-weight: 500; }
+
+    /* hero right image panel */
+    .hero-right {
+      position: relative;
+      display: flex; align-items: stretch;
+    }
+    .hero-img-outer {
+      position: absolute; inset: 0;
+    }
+    .hero-img-outer img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      filter: brightness(.6) saturate(.9);
+    }
+    .hero-img-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to right, var(--navy) 0%, transparent 30%),
+                  linear-gradient(to top, rgba(14,27,46,.7) 0%, transparent 50%);
+    }
+    .hero-float-cards {
+      position: absolute; bottom: 48px; right: 40px; left: 40px;
+      display: flex; flex-direction: column; gap: 12px;
+      z-index: 2;
+    }
+    .glass-card {
+      background: rgba(253,251,247,.08);
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 16px;
+      padding: 14px 18px;
+      display: flex; align-items: center; gap: 14px;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.12);
+    }
+    .glass-card-icon {
+      width: 40px; height: 40px; border-radius: 10px;
+      background: var(--gold);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .glass-card-icon svg { width: 18px; height: 18px; color: var(--navy); }
+    .glass-card-text strong { display: block; font-size: .85rem; font-weight: 700; color: #fff; }
+    .glass-card-text span   { font-size: .75rem; color: rgba(255,255,255,.55); }
+
+    /* ── MARQUEE ─────────────────────────────────────────────── */
+    .marquee-wrap {
+      background: var(--navy);
+      border-top: 1px solid rgba(255,255,255,.05);
+      border-bottom: 1px solid rgba(184,137,43,.15);
+      padding: 18px 0;
+      overflow: hidden;
+    }
+    .marquee-track {
+      display: flex; gap: 0; width: max-content;
+      animation: marquee 28s linear infinite;
+    }
+    .marquee-track:hover { animation-play-state: paused; }
+    @keyframes marquee { from{transform:translateX(0)} to{transform:translateX(-50%)} }
+    .marquee-item {
+      display: flex; align-items: center; gap: 14px;
+      padding: 0 40px;
+      font-size: .75rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase;
+      color: rgba(255,255,255,.35);
+      white-space: nowrap;
+      border-right: 1px solid rgba(255,255,255,.08);
+    }
+    .marquee-item .dot { width: 5px; height: 5px; border-radius: 50%; background: var(--gold); flex-shrink: 0; }
+
+    /* ── SECTION BASE ────────────────────────────────────────── */
+    .section { padding: 112px 0; }
+    .section-head { margin-bottom: 72px; }
+    .section-head.centered { text-align: center; }
+    .section-head.centered .eyebrow { justify-content: center; }
+    .section-head .display-heading { font-size: clamp(2.2rem, 4vw, 3.4rem); margin-top: 16px; }
+    .section-lead { margin-top: 16px; color: var(--muted); font-size: 1rem; line-height: 1.75; max-width: 520px; }
+    .section-head.centered .section-lead { margin-left: auto; margin-right: auto; }
+
+    /* ── PILLARS ─────────────────────────────────────────────── */
+    .pillars { background: var(--cream-2); }
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: 1.6fr 1fr 1fr;
+      gap: 2px;
+      background: var(--cream-3);
+      border-radius: 24px;
+      overflow: hidden;
+    }
+    .pillar {
+      background: var(--cream);
+      padding: 48px 40px;
+      transition: background .3s var(--ease-smooth);
+    }
+    .pillar:hover { background: #fff; }
+    .pillar-icon {
+      width: 52px; height: 52px;
+      background: var(--navy);
+      border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 28px;
+    }
+    .pillar-icon svg { width: 22px; height: 22px; color: var(--gold-light); }
+    .pillar h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-weight: 700; color: var(--navy); margin-bottom: 12px; }
+    .pillar p  { font-size: .9rem; color: var(--muted); line-height: 1.7; }
+    .pillar.featured { background: var(--navy); }
+    .pillar.featured:hover { background: var(--navy-2); }
+    .pillar.featured .pillar-icon { background: rgba(184,137,43,.18); }
+    .pillar.featured h3 { color: #fff; }
+    .pillar.featured p  { color: rgba(255,255,255,.5); }
+
+    /* ── PRODUCTS ────────────────────────────────────────────── */
+    .products { background: var(--cream); }
+    .products-bento {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+    .product-group-label {
+      grid-column: 1 / -1;
+      display: flex; align-items: center; gap: 16px;
+      font-size: .7rem; font-weight: 700; letter-spacing: .16em;
+      text-transform: uppercase; color: var(--muted);
+      margin-top: 12px;
+    }
+    .product-group-label::after {
+      content: ''; flex: 1; height: 1px; background: var(--border);
+    }
+    .product-card {
+      position: relative;
+      border-radius: 24px;
+      overflow: hidden;
+      background: var(--cream);
+      /* double-bezel outer shell */
+      padding: 6px;
+      background: var(--cream-2);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-md);
+      transition: transform .6s var(--ease-expo), box-shadow .6s var(--ease-expo);
+    }
+    .product-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
+    .product-inner {
+      /* double-bezel inner core */
+      border-radius: 18px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.9);
+      height: 100%;
+      display: flex; flex-direction: column;
+    }
+    .product-visual {
+      position: relative;
+      background: var(--cream-2);
+      overflow: hidden;
+    }
+    .product-visual img {
+      width: 100%; height: 100%;
+      object-fit: contain;
+      padding: 24px;
+      transition: transform .6s var(--ease-expo);
+    }
+    .product-card:hover .product-visual img { transform: scale(1.04); }
+    .product-visual.dark-bg { background: #111316; }
+    .product-visual.dark-bg img { object-fit: cover; padding: 0; filter: brightness(.85); }
+    .product-badge {
+      position: absolute; top: 16px; left: 16px;
+      background: rgba(14,27,46,.75);
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: 100px;
+      padding: 5px 14px;
+      font-size: .68rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase;
+      color: var(--gold-light);
+      backdrop-filter: blur(8px);
+    }
+    .product-body { padding: 28px 28px 24px; flex: 1; display: flex; flex-direction: column; }
+    .product-cat {
+      font-size: .68rem; font-weight: 600; letter-spacing: .15em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 10px;
+    }
+    .product-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem; font-weight: 700;
+      color: var(--navy); margin-bottom: 12px;
+      line-height: 1.2;
+    }
+    .product-desc { font-size: .88rem; color: var(--muted); line-height: 1.7; flex: 1; }
+    .product-specs {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 8px; margin-top: 18px;
+    }
+    .spec-item {
+      background: var(--cream-2);
+      border-radius: 10px;
+      padding: 10px 12px;
+    }
+    .spec-label { font-size: .65rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-bottom: 2px; }
+    .spec-value { font-size: .82rem; font-weight: 600; color: var(--navy); }
+    .product-brands { display: flex; gap: 10px; margin-top: 16px; flex-wrap: wrap; }
+    .brand-chip {
+      display: flex; align-items: center; gap: 8px;
+      background: var(--cream-2);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 6px 10px;
+    }
+    .brand-chip img { width: 40px; height: 40px; object-fit: contain; border-radius: 6px; }
+    .brand-chip span { font-size: .72rem; font-weight: 600; color: var(--navy); }
+    .product-footer {
+      margin-top: 20px; padding-top: 16px;
+      border-top: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .availability { font-size: .75rem; font-weight: 600; color: #16a34a; display: flex; align-items: center; gap: 6px; }
+    .availability::before { content:''; width:6px;height:6px;border-radius:50%;background:#16a34a;display:block;animation:pulse-dot 2s ease-in-out infinite; }
+    .link-arrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: .8rem; font-weight: 700; color: var(--gold);
+      transition: gap .3s var(--ease-expo);
+    }
+    .link-arrow svg { width: 14px; height: 14px; transition: transform .3s var(--ease-expo); }
+    .product-card:hover .link-arrow { gap: 12px; }
+    .product-card:hover .link-arrow svg { transform: translate(3px,-3px); }
+
+    /* sac sizes mini grid */
+    .sac-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 8px; margin-top: 16px; }
+    .sac-item { background: var(--cream-2); border-radius: 10px; padding: 8px 6px; text-align: center; }
+    .sac-item img { height: 52px; object-fit: contain; margin: 0 auto; }
+    .sac-item-label { font-size: .65rem; font-weight: 700; color: var(--navy); margin-top: 4px; }
+
+    /* card visual height */
+    .product-card .product-visual { height: 180px; }
+
+    /* ── WHY ──────────────────────────────────────────────────── */
+    .why { background: var(--navy); position: relative; overflow: hidden; }
+    .why-bg {
+      position: absolute; inset: 0; pointer-events: none;
+      background-image: url("motif%20hichem%202.png");
+      background-size: 320px; opacity: .03;
+    }
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: rgba(255,255,255,.05);
+      border-radius: 24px; overflow: hidden;
+      position: relative; z-index: 1;
+    }
+    .why-item {
+      padding: 44px 36px;
+      background: var(--navy);
+      transition: background .3s var(--ease-smooth);
+    }
+    .why-item:hover { background: var(--navy-2); }
+    .why-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 3rem; font-weight: 700;
+      color: rgba(184,137,43,.22);
+      line-height: 1; margin-bottom: 20px;
+      display: block;
+    }
+    .why-item h4 { font-size: 1rem; font-weight: 700; color: #fff; margin-bottom: 12px; }
+    .why-item p  { font-size: .88rem; color: rgba(255,255,255,.45); line-height: 1.7; }
+    .why-cta-row {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-top: 72px;
+      padding-top: 48px;
+      border-top: 1px solid rgba(255,255,255,.08);
+      position: relative; z-index: 1;
+    }
+    .why-cta-text {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 600; font-style: italic;
+      color: rgba(255,255,255,.7); max-width: 540px; line-height: 1.3;
+    }
+    .why-cta-text strong { color: var(--gold-light); font-style: normal; }
+
+    /* ── CONTACT ──────────────────────────────────────────────── */
+    .contact { background: var(--cream); }
+    .contact-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start;
+    }
+    .contact-info .display-heading { font-size: clamp(2rem, 3.5vw, 3rem); margin-bottom: 20px; }
+    .contact-info p { color: var(--muted); line-height: 1.75; margin-bottom: 48px; }
+    .contact-items { display: flex; flex-direction: column; gap: 24px; }
+    .c-item { display: flex; gap: 18px; align-items: flex-start; }
+    .c-icon {
+      width: 48px; height: 48px; flex-shrink: 0;
+      border-radius: 14px;
+      background: var(--navy);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .c-icon svg { width: 20px; height: 20px; color: var(--gold-light); }
+    .c-text strong { display: block; font-size: .9rem; font-weight: 700; color: var(--navy); margin-bottom: 2px; }
+    .c-text span   { font-size: .88rem; color: var(--muted); }
+
+    /* form */
+    .contact-form-wrap {
+      /* double-bezel */
+      padding: 6px;
+      background: var(--cream-3);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      box-shadow: var(--shadow-lg);
+    }
+    .contact-form {
+      background: #fff;
+      border-radius: 22px;
+      padding: 40px;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.9);
+    }
+    .form-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.7rem; font-weight: 700;
+      color: var(--navy); margin-bottom: 28px;
+    }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .form-group { margin-bottom: 18px; }
+    .form-group label {
+      display: block; font-size: .78rem; font-weight: 600;
+      letter-spacing: .06em; text-transform: uppercase;
+      color: var(--navy); margin-bottom: 8px;
+    }
+    .form-group input, .form-group select, .form-group textarea {
+      width: 100%;
+      background: var(--cream);
+      border: 1.5px solid var(--cream-3);
+      border-radius: 12px;
+      padding: 13px 16px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: .9rem; color: var(--ink);
+      outline: none;
+      transition: border-color .3s var(--ease-smooth), box-shadow .3s var(--ease-smooth), background .3s;
+    }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+      border-color: var(--gold);
+      background: #fff;
+      box-shadow: 0 0 0 4px rgba(184,137,43,.1);
+    }
+    .form-group textarea { resize: vertical; min-height: 110px; }
+    .btn-submit {
+      width: 100%;
+      display: flex; align-items: center; justify-content: center; gap: 12px;
+      background: var(--navy);
+      color: #fff;
+      border: none;
+      padding: 16px 24px;
+      border-radius: 14px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: .9rem; font-weight: 700;
+      cursor: pointer;
+      transition: background .3s var(--ease-smooth), transform .3s var(--ease-back), box-shadow .3s;
+    }
+    .btn-submit:hover { background: var(--navy-3); transform: translateY(-2px); box-shadow: var(--shadow-md); }
+    .btn-submit:active { transform: scale(.98); }
+    .btn-submit .icon-circle {
+      width: 30px; height: 30px; border-radius: 50%;
+      background: rgba(255,255,255,.1);
+      display: flex; align-items: center; justify-content: center;
+      transition: transform .3s var(--ease-back);
+    }
+    .btn-submit:hover .icon-circle { transform: translate(2px,-2px) scale(1.1); }
+    .btn-submit svg { width: 14px; height: 14px; }
+
+    /* ── FOOTER ───────────────────────────────────────────────── */
+    footer {
+      background: var(--navy);
+      border-top: 1px solid rgba(255,255,255,.06);
+      padding: 64px 0 32px;
+    }
+    .footer-top {
+      display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 48px;
+      padding-bottom: 48px;
+      border-bottom: 1px solid rgba(255,255,255,.07);
+      margin-bottom: 32px;
+    }
+    .footer-brand img { height: 44px; margin-bottom: 18px; }
+    .footer-brand p { font-size: .88rem; color: rgba(255,255,255,.4); line-height: 1.75; max-width: 260px; }
+    .footer-col h4 { font-size: .7rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--gold); margin-bottom: 22px; }
+    .footer-col li { margin-bottom: 12px; }
+    .footer-col a { font-size: .88rem; color: rgba(255,255,255,.4); transition: color .25s; }
+    .footer-col a:hover { color: rgba(255,255,255,.8); }
+    .footer-bottom {
+      display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;
+    }
+    .footer-bottom p { font-size: .8rem; color: rgba(255,255,255,.25); }
+    .footer-links { display: flex; gap: 24px; }
+    .footer-links a { font-size: .78rem; color: rgba(255,255,255,.25); transition: color .25s; }
+    .footer-links a:hover { color: rgba(255,255,255,.5); }
+
+    /* ── WHATSAPP FLOAT ──────────────────────────────────────── */
+    .wa-float {
+      position: fixed; bottom: 28px; right: 28px; z-index: 100;
+      display: flex; align-items: center; gap: 10px;
+      background: #25d366; border-radius: 100px;
+      padding: 0 20px 0 0;
+      height: 56px;
+      box-shadow: 0 6px 28px rgba(37,211,102,.45);
+      transition: transform .3s var(--ease-back), box-shadow .3s, padding .3s var(--ease-expo);
+      overflow: hidden;
+    }
+    .wa-float-icon { width: 56px; height: 56px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
+    .wa-float-label { font-size: .8rem; font-weight: 700; color: #fff; white-space: nowrap; opacity: 0; transform: translateX(-8px); transition: opacity .3s, transform .3s var(--ease-expo); pointer-events: none; }
+    .wa-float:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(37,211,102,.55); }
+    .wa-float:hover .wa-float-label { opacity: 1; transform: none; }
+    .wa-float svg { width: 26px; height: 26px; color: #fff; }
+
+    /* ── BACK TO TOP ─────────────────────────────────────────── */
+    .back-top {
+      position: fixed; bottom: 28px; left: 28px; z-index: 100;
+      width: 48px; height: 48px;
+      background: var(--navy);
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer;
+      opacity: 0; transform: translateY(12px);
+      transition: opacity .4s var(--ease-expo), transform .4s var(--ease-expo), background .3s;
+      pointer-events: none;
+    }
+    .back-top.visible { opacity: 1; transform: none; pointer-events: auto; }
+    .back-top:hover { background: var(--navy-2); }
+    .back-top svg { width: 16px; height: 16px; color: rgba(255,255,255,.7); }
+
+    /* ── NAV ACTIVE ──────────────────────────────────────────── */
+    .nav-links a.active { color: #fff; }
+
+    /* ── FORM SUCCESS ────────────────────────────────────────── */
+    .form-success {
+      display: none;
+      flex-direction: column; align-items: center; justify-content: center;
+      gap: 16px;
+      padding: 48px 24px;
+      text-align: center;
+    }
+    .form-success-icon {
+      width: 64px; height: 64px; border-radius: 50%;
+      background: #ecfdf5; border: 2px solid #16a34a;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .form-success-icon svg { width: 28px; height: 28px; color: #16a34a; }
+    .form-success h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; font-weight: 700; color: var(--navy); }
+    .form-success p { font-size: .9rem; color: var(--muted); line-height: 1.7; max-width: 320px; }
+
+    /* ── RESPONSIVE ──────────────────────────────────────────── */
+    @media (max-width: 1024px) {
+      .hero { grid-template-columns: 1fr; min-height: 100dvh; }
+      .hero-right { display: none; }
+      .hero-left { padding: 120px 40px 80px; justify-content: flex-end; }
+      .products-bento { grid-template-columns: 1fr 1fr; }
+      .why-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 768px) {
+      .nav-links, .nav-cta { display: none; }
+      .hamburger { display: flex; }
+      .navbar { padding: 10px 20px; gap: 0; justify-content: space-between; width: 92vw; }
+      .hero-left { padding: 110px 24px 64px; }
+      .section { padding: 80px 0; }
+      .pillars-grid { grid-template-columns: 1fr; }
+      .why-grid { grid-template-columns: 1fr; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .footer-top { grid-template-columns: 1fr; }
+      .footer-bottom { flex-direction: column; align-items: flex-start; }
+      .form-row { grid-template-columns: 1fr; }
+      .sac-grid { grid-template-columns: repeat(2,1fr); }
+      .why-cta-row { flex-direction: column; gap: 32px; }
+      #a-propos .container > div { grid-template-columns: 1fr !important; gap: 48px !important; }
+    }
+    @media (max-width: 480px) {
+      .hero-actions { flex-direction: column; }
+      .hero-metrics { gap: 24px; flex-wrap: wrap; }
+      .metric { border-right: none; padding-right: 0; margin-right: 0; }
+      .products-bento { grid-template-columns: 1fr; }
+      .product-card .product-visual { height: 160px !important; }
+    }
+  </style>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L894LQPZLV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-L894LQPZLV');
+</script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WRGHPS4L"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  <!-- ── NAVBAR ─────────────────────────────────────────────── -->
+  <div class="nav-wrap">
+    <nav class="navbar" id="navbar">
+      <a href="#" class="nav-logo">
+        <img src="logo%20adonis-01.png" alt="Adonis France" />
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#produits">Produits</a></li>
+        <li><a href="#a-propos">À propos</a></li>
+        <li><a href="#pourquoi">Pourquoi nous</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">
+        Demander un devis
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M8 3l5 5-5 5"/></svg>
+      </a>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </div>
+
+  <!-- mobile menu overlay -->
+  <div id="mob-menu" style="display:none;position:fixed;inset:0;z-index:190;background:rgba(14,27,46,.96);backdrop-filter:blur(20px);flex-direction:column;align-items:center;justify-content:center;gap:36px;">
+    <a href="#accueil"  onclick="closeMob()" style="font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:700;color:#fff;">Accueil</a>
+    <a href="#produits" onclick="closeMob()" style="font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:700;color:rgba(255,255,255,.55);">Produits</a>
+    <a href="#a-propos" onclick="closeMob()" style="font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:700;color:rgba(255,255,255,.55);">À propos</a>
+    <a href="#pourquoi" onclick="closeMob()" style="font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:700;color:rgba(255,255,255,.55);">Pourquoi nous</a>
+    <a href="#contact"  onclick="closeMob()" style="font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:700;color:rgba(255,255,255,.55);">Contact</a>
+    <a href="#contact"  onclick="closeMob()" class="nav-cta" style="margin-top:8px;">
+      Demander un devis
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><path d="M3 8h10M8 3l5 5-5 5"/></svg>
+    </a>
+  </div>
+
+  <!-- ── HERO ───────────────────────────────────────────────── -->
+  <section class="hero" id="accueil">
+    <div class="hero-bg-pattern"></div>
+    <div class="hero-radial"></div>
+    <div class="hero-left">
+      <div class="hero-tag">
+        <span></span>
+        B2B &amp; B2C · Import direct · Depuis 2006
+      </div>
+      <h1 class="hero-title text-balance">
+        Votre partenaire<br/><span class="accent">B2B &amp; B2C</span><br/>depuis 2006.
+      </h1>
+      <p class="hero-desc">
+        Importateurs directs depuis la Chine depuis 2006, basés à Gennevilliers (92). Stock permanent sur nos produits. Particuliers, revendeurs et professionnels bienvenus — commande sur mesure selon volume.
+      </p>
+      <div class="hero-actions">
+        <a href="#produits" class="btn-primary">
+          Voir le catalogue
+          <span class="icon-circle">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;color:var(--navy)"><path d="M3 8h10M8 3l5 5-5 5"/></svg>
+          </span>
+        </a>
+        <a href="#contact" class="btn-ghost">Nous contacter</a>
+      </div>
+      <div class="hero-metrics">
+        <div class="metric">
+          <div class="metric-num">2006</div>
+          <div class="metric-label">Année de création</div>
+        </div>
+        <div class="metric">
+          <div class="metric-num">3</div>
+          <div class="metric-label">Gammes permanentes</div>
+        </div>
+        <div class="metric">
+          <div class="metric-num">FR+EU</div>
+          <div class="metric-label">Distribution</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-img-outer">
+        <img src="AFS%20PHOTOS/content_lg.jpg" alt="Thé à la menthe marocain — Adonis France" />
+      </div>
+      <div class="hero-img-overlay"></div>
+      <div class="hero-float-cards">
+        <div class="glass-card">
+          <div class="glass-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 1 7 7c0 4-7 13-7 13S5 13 5 9a7 7 0 0 1 7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          </div>
+          <div class="glass-card-text">
+            <strong>Livraison rapide</strong>
+            <span>Île-de-France &amp; alentours</span>
+          </div>
+        </div>
+        <div class="glass-card">
+          <div class="glass-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/></svg>
+          </div>
+          <div class="glass-card-text">
+            <strong>Produits certifiés</strong>
+            <span>Sélection rigoureuse à la source</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── MARQUEE ────────────────────────────────────────────── -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <!-- first set -->
+      <div class="marquee-item"><span class="dot"></span>Thé vert de Chine</div>
+      <div class="marquee-item"><span class="dot"></span>Charbon de bois pour encens</div>
+      <div class="marquee-item"><span class="dot"></span>Sacs tissés PP 190g/m²</div>
+      <div class="marquee-item"><span class="dot"></span>B2B &amp; B2C</div>
+      <div class="marquee-item"><span class="dot"></span>Depuis 2006</div>
+      <div class="marquee-item"><span class="dot"></span>Gennevilliers (92)</div>
+      <div class="marquee-item"><span class="dot"></span>Chunmee 41022AAAA</div>
+      <div class="marquee-item"><span class="dot"></span>Gunpowder 3505AAAAA</div>
+      <div class="marquee-item"><span class="dot"></span>Import direct Chine</div>
+      <div class="marquee-item"><span class="dot"></span>Particuliers bienvenus</div>
+      <!-- duplicate for seamless loop -->
+      <div class="marquee-item"><span class="dot"></span>Thé vert de Chine</div>
+      <div class="marquee-item"><span class="dot"></span>Charbon de bois pour encens</div>
+      <div class="marquee-item"><span class="dot"></span>Sacs tissés PP 190g/m²</div>
+      <div class="marquee-item"><span class="dot"></span>B2B &amp; B2C</div>
+      <div class="marquee-item"><span class="dot"></span>Depuis 2006</div>
+      <div class="marquee-item"><span class="dot"></span>Gennevilliers (92)</div>
+      <div class="marquee-item"><span class="dot"></span>Chunmee 41022AAAA</div>
+      <div class="marquee-item"><span class="dot"></span>Gunpowder 3505AAAAA</div>
+      <div class="marquee-item"><span class="dot"></span>Import direct Chine</div>
+      <div class="marquee-item"><span class="dot"></span>Particuliers bienvenus</div>
+    </div>
+  </div>
+
+  <!-- ── PILLARS ────────────────────────────────────────────── -->
+  <section class="pillars section">
+    <div class="container">
+      <div class="pillars-grid">
+        <div class="pillar featured reveal">
+          <div class="pillar-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <h3>Une qualité sans compromis</h3>
+          <p>Chaque produit est sélectionné directement à la source, contrôlé et conditionné pour répondre aux exigences les plus élevées du marché européen.</p>
+        </div>
+        <div class="pillar reveal reveal-delay-1">
+          <div class="pillar-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <h3>Livraison rapide</h3>
+          <p>Expédition express depuis l'Île-de-France. Vos commandes arrivent vite et en parfait état, en France comme en Europe.</p>
+        </div>
+        <div class="pillar reveal reveal-delay-2">
+          <div class="pillar-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Partenariat durable</h3>
+          <p>Adonis France accompagne revendeurs, grossistes et particuliers avec une relation commerciale transparente et sur mesure.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PRODUCTS ───────────────────────────────────────────── -->
+  <section class="products section" id="produits">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Notre catalogue</span>
+        <h2 class="display-heading text-balance">Des produits<br/>importés avec soin</h2>
+        <p class="section-lead">Disponibles en stock, conditionnés par palette, carton ou unité selon vos besoins professionnels.</p>
+      </div>
+      <div class="products-bento">
+
+        <!-- ── Charbon de bois ── -->
+        <div class="product-group-label">Charbon de bois — Golden River</div>
+
+        <!-- Charbon 33mm -->
+        <div class="product-card reveal">
+          <div class="product-inner">
+            <div class="product-visual dark-bg">
+              <img loading="lazy" src="Charbon%20golden/charbon-33mm-boite.jpg.jpg" alt="Charbon Golden River 33mm" onerror="this.src='Charbon%20golden/charbon-33mm-boite.jpg.jpg'" />
+              <div class="product-badge">Charbon de bois</div>
+            </div>
+            <div class="product-body">
+              <div class="product-cat">Encens &amp; Combustion</div>
+              <h3 class="product-name">Golden River — 33mm</h3>
+              <p class="product-desc">Pastille ronde 33mm. 100 pastilles/boîte, 24 boîtes/carton, allumage rapide, combustion longue.</p>
+              <div class="product-footer">
+                <span class="availability">En stock</span>
+                <a href="charbon-33mm.html" class="link-arrow">Voir le produit <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M8 3l5 5-5 5"/></svg></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Charbon 40mm -->
+        <div class="product-card reveal reveal-delay-1">
+          <div class="product-inner">
+            <div class="product-visual dark-bg">
+              <img loading="lazy" src="Charbon%20golden/charbon-40mm-ouvert.jpg.png" alt="Charbon Golden River 40mm" onerror="this.src='Charbon%20golden/charbon-40mm-ouvert.jpg.png'" />
+              <div class="product-badge">Charbon de bois</div>
+            </div>
+            <div class="product-body">
+              <div class="product-cat">Encens &amp; Combustion</div>
+              <h3 class="product-name">Golden River — 40mm</h3>
+              <p class="product-desc">Pastille ronde 40mm. 100 pastilles/boîte, 12 boîtes/carton. Combustion longue durée.</p>
+              <div class="product-footer">
+                <span class="availability">En stock</span>
+                <a href="charbon-40mm.html" class="link-arrow">Voir le produit <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M8 3l5 5-5 5"/></svg></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Charbon Coco XL -->
+        <div class="product-card reveal reveal-delay-2">
+          <div class="product-inner">
+            <div class="product-visual dark-bg">
+              <img loading="lazy" src="Charbon%20golden/Charbon%20goldencharbon-coco-boite.jpg.png" alt="Charbon de coco Golden River XL" />
+              <div class="product-badge">Charbon de coco</div>
+            </div>
+            <div class="product-body">
+              <div class="product-cat">Encens</div>
+              <h3 class="product-name">Golden River — Coco XL</h3>
+              <p class="product-desc">Cube 26×26×26mm, boîte 1kg. 100% noix de coco, sans additifs, sans odeur.</p>
+              <div class="product-footer">
+                <span class="availability">En stock</span>
+                <a href="charbon-coco.html" class="link-arrow">Voir le produit <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M8 3l5 5-5 5"/></svg></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sacs PP -->
+        <div class="product-card reveal reveal-delay-3">
+          <div class="product-inner">
+            <div class="product-visual">
+              <img loading="lazy" src="AFS%20PHOTOS/SAC%20XL/SAC%20XL.png" alt="Sacs tissés PP 4 tailles" />
+              <div class="product-badge">Emballage</div>
+            </div>
+            <div class="product-body">
+              <div class="product-cat">Rangement &amp; Bagagerie</div>
+              <h3 class="product-name">Sacs tissés PP</h3>
+              <p class="product-desc">4 tailles S/M/L/XL, PP 190g/m², fermeture éclair #10, poignée 3,5cm. Stock permanent.</p>
+              <div class="product-footer">
+                <span class="availability">4 tailles disponibles</span>
+                <a href="sacs.html" class="link-arrow">Voir les tailles <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M8 3l5 5-5 5"/></svg></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Thé vert de Chine ── -->
+        <div class="product-group-label">Thé vert de Chine</div>
+
+        <!-- Al Afdal Chunmee -->
+        <div class="product-card reveal">
+          <div class="product-inner">
+            <div class="product-visual">
+              <img loading="lazy" src="AFS%20PHOTOS/AFDAL/Al%20Afdal-200G.png" alt="Al Afdal Chunmee 41022AAAA" />
+              <div class="product-badge">Thé Chunmee</div>
+            </div>
+            <div class="product-body">
+              <div class="product-cat">Thé vert — Chunmee</div>
+              <h3 class="product-name">Al Afdal — Chunmee</h3>
+              <p class="product-desc">Réf. 41022AAAA. Feuilles torsadées grade AAAA. Boîtes 200g et 400g.</p>
+              <div class="product-footer">
+                <span class="availability">En stock</span>
+                <a href="afdal-chunmee.html" class="link-arrow">Voir le produit <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M8 3l5 5-5 5"/></svg></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ahl Oued Noun Chunmee -->
+        <div class="product-card reveal reveal-delay-1">
+          <div class="product-inner">
+            <div class="product-visual">
+              <img loading="lazy" src="AFS%20PHOTOS/Ahl%20OUED%20NOUN%20O/Ahl%20Oued%20Noun%2041022-200g.png" alt="Ahl Oued Noun Chunmee 41022AAAAA" />
+              <div class="product-badge">Thé Chunmee</div>
+            </div>
+            <div class="product-body">
+              <div class="product-cat">Thé vert — Chunmee</div>
+              <h3 class="product-name">Ahl Oued Noun — Chunmee</h3>
+              <p class="product-desc">Réf. 41022AAAAA. Forte rotation en épicerie orientale. Boîtes 200g et 400g.</p>
+              <div class="product-footer">
+                <span class="availability">En stock</span>
+                <a href="aon-chunmee.html" class="link-arrow">Voir le produit <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M8 3l5 5-5 5"/></svg></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Al Kasbah Gunpowder -->
+        <div class="product-card reveal reveal-delay-2">
+          <div class="product-inner">
+            <div class="product-visual">
+              <img loading="lazy" src="AFS%20PHOTOS/KASBAH/El%20Kasbah%20Tea-200G.png" alt="Al Kasbah Gunpowder 3505AAAAA" />
+              <div class="product-badge">Thé Gunpowder</div>
+            </div>
+            <div class="product-body">
+              <div class="product-cat">Thé vert — Gunpowder</div>
+              <h3 class="product-name">Al Kasbah — Gunpowder</h3>
+              <p class="product-desc">Réf. 3505AAAAA. Province Zhejiang, grade AAAAA. Boîte 200g.</p>
+              <div class="product-footer">
+                <span class="availability">En stock</span>
+                <a href="kasbah-gunpowder.html" class="link-arrow">Voir le produit <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M8 3l5 5-5 5"/></svg></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ahl Oued Noun Gunpowder -->
+        <div class="product-card reveal reveal-delay-3">
+          <div class="product-inner">
+            <div class="product-visual">
+              <img loading="lazy" src="AFS%20PHOTOS/Ahl%20OUED%20NOUN%20R/Ahl%20Oued%20Noun-200G.png" alt="Ahl Oued Noun Gunpowder 3505AAAAA" />
+              <div class="product-badge">Thé Gunpowder</div>
+            </div>
+            <div class="product-body">
+              <div class="product-cat">Thé vert — Gunpowder</div>
+              <h3 class="product-name">Ahl Oued Noun — Gunpowder</h3>
+              <p class="product-desc">Réf. 3505AAAAA. Gamme complète 200g et 400g. Forte diffusion France/Europe.</p>
+              <div class="product-footer">
+                <span class="availability">En stock</span>
+                <a href="aon-gunpowder.html" class="link-arrow">Voir le produit <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M8 3l5 5-5 5"/></svg></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── À PROPOS ──────────────────────────────────────────────── -->
+  <section class="section" style="background:var(--cream-2);" id="a-propos">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;">
+        <div class="reveal">
+          <span class="eyebrow">Notre histoire</span>
+          <h2 class="display-heading text-balance" style="font-size:clamp(2.2rem,4vw,3.2rem);margin-top:16px;margin-bottom:24px;">
+            Depuis 2006,<br/>importateurs directs
+          </h2>
+          <p style="color:var(--muted);line-height:1.8;margin-bottom:20px;">
+            Adonis France est une société d'import-distribution de gros, basée à Gennevilliers (Hauts-de-Seine),
+            fondée en 2006. Nous importons directement depuis la Chine des produits pour professionnels et particuliers :
+            charbon de bois pour encens, sacs tissés réutilisables, thé vert de Chine et produits divers de bazar.
+          </p>
+          <p style="color:var(--muted);line-height:1.8;margin-bottom:36px;">
+            Cette relation directe avec les producteurs et l'import en conteneurs complets nous permettent de
+            proposer des produits de qualité constante à des prix compétitifs. Aucun prix affiché : chaque
+            demande fait l'objet d'un devis personnalisé selon le volume et le profil du client.
+          </p>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+            <div style="background:#fff;border:1px solid var(--border);border-radius:16px;padding:20px 18px;">
+              <div style="font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:700;color:var(--gold);line-height:1;">20+</div>
+              <div style="font-size:.78rem;color:var(--muted);margin-top:4px;">Années d'expérience</div>
+            </div>
+            <div style="background:#fff;border:1px solid var(--border);border-radius:16px;padding:20px 18px;">
+              <div style="font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:700;color:var(--gold);line-height:1;">B2B&B2C</div>
+              <div style="font-size:.78rem;color:var(--muted);margin-top:4px;">Pro &amp; particuliers</div>
+            </div>
+            <div style="background:#fff;border:1px solid var(--border);border-radius:16px;padding:20px 18px;">
+              <div style="font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:700;color:var(--gold);line-height:1;">FR+EU</div>
+              <div style="font-size:.78rem;color:var(--muted);margin-top:4px;">Distribution France &amp; Europe</div>
+            </div>
+            <div style="background:#fff;border:1px solid var(--border);border-radius:16px;padding:20px 18px;">
+              <div style="font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:700;color:var(--gold);line-height:1;">3</div>
+              <div style="font-size:.78rem;color:var(--muted);margin-top:4px;">Gammes permanentes</div>
+            </div>
+          </div>
+        </div>
+        <div class="reveal reveal-delay-2" style="display:flex;flex-direction:column;gap:16px;">
+          <div style="background:#fff;border:1px solid var(--border);border-radius:20px;padding:28px 28px;box-shadow:var(--shadow-sm);">
+            <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px;">
+              <div style="width:44px;height:44px;border-radius:12px;background:var(--navy);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold-light)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px;"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              </div>
+              <div style="font-weight:700;color:var(--navy);">Import direct</div>
+            </div>
+            <p style="font-size:.88rem;color:var(--muted);line-height:1.7;">Pas d'intermédiaire entre le producteur en Chine et nos clients en France et en Europe.</p>
+          </div>
+          <div style="background:#fff;border:1px solid var(--border);border-radius:20px;padding:28px 28px;box-shadow:var(--shadow-sm);">
+            <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px;">
+              <div style="width:44px;height:44px;border-radius:12px;background:var(--navy);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold-light)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px;"><path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+              </div>
+              <div style="font-weight:700;color:var(--navy);">Stock permanent</div>
+            </div>
+            <p style="font-size:.88rem;color:var(--muted);line-height:1.7;">Des conteneurs complets pour sécuriser l'approvisionnement de nos clients toute l'année.</p>
+          </div>
+          <div style="background:#fff;border:1px solid var(--border);border-radius:20px;padding:28px 28px;box-shadow:var(--shadow-sm);">
+            <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px;">
+              <div style="width:44px;height:44px;border-radius:12px;background:var(--navy);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold-light)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px;"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <div style="font-weight:700;color:var(--navy);">Clientèle professionnelle</div>
+            </div>
+            <p style="font-size:.88rem;color:var(--muted);line-height:1.7;">Épiceries orientales, boutiques religieuses, marchés, grossistes alimentaires et non-alimentaires.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── WHY ────────────────────────────────────────────────── -->
+  <section class="why section" id="pourquoi">
+    <div class="why-bg"></div>
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" style="color:var(--gold-light)">Pourquoi Adonis France</span>
+        <h2 class="display-heading text-balance" style="color:#fff;">Ce qui nous distingue</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-item reveal">
+          <span class="why-num">01</span>
+          <h4>Qualité sélectionnée</h4>
+          <p>Nos produits sont contrôlés à la source. Chaque lot répond à des critères de qualité stricts avant d'entrer dans notre stock.</p>
+        </div>
+        <div class="why-item reveal reveal-delay-1">
+          <span class="why-num">02</span>
+          <h4>Livraison express</h4>
+          <p>Expédition rapide depuis l'Île-de-France. Nous nous engageons sur des délais courts pour tous vos besoins professionnels.</p>
+        </div>
+        <div class="why-item reveal reveal-delay-2">
+          <span class="why-num">03</span>
+          <h4>Tarifs compétitifs</h4>
+          <p>Import direct depuis la source, sans intermédiaires inutiles. Vous bénéficiez des meilleurs prix sans sacrifier la qualité.</p>
+        </div>
+        <div class="why-item reveal reveal-delay-3">
+          <span class="why-num">04</span>
+          <h4>Grandes quantités</h4>
+          <p>Palettes, cartons ou unités — nous nous adaptons à vos volumes que vous soyez revendeur, grossiste ou distributeur.</p>
+        </div>
+        <div class="why-item reveal reveal-delay-4">
+          <span class="why-num">05</span>
+          <h4>Réseau international</h4>
+          <p>Partenariats directs en Chine et en Europe pour un approvisionnement régulier, sécurisé et sans rupture de stock.</p>
+        </div>
+        <div class="why-item reveal">
+          <span class="why-num">06</span>
+          <h4>Service personnalisé</h4>
+          <p>Une équipe disponible pour adapter chaque commande à vos besoins spécifiques et vous accompagner sur le long terme.</p>
+        </div>
+      </div>
+      <div class="why-cta-row reveal">
+        <p class="why-cta-text">
+          Prêt à travailler avec un<br/>
+          <strong>partenaire de confiance ?</strong>
+        </p>
+        <a href="#contact" class="btn-primary">
+          Démarrer une commande
+          <span class="icon-circle">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;color:var(--navy)"><path d="M3 8h10M8 3l5 5-5 5"/></svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ─────────────────────────────────────────────── -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="reveal">
+          <span class="eyebrow">Nous contacter</span>
+          <h2 class="display-heading text-balance" style="font-size:clamp(2rem,3.5vw,3rem);margin-top:16px;margin-bottom:20px;">
+            Passons commande<br/>ensemble
+          </h2>
+          <p style="color:var(--muted);line-height:1.75;margin-bottom:48px;max-width:380px;">
+            Professionnel, revendeur ou particulier — contactez-nous pour un devis personnalisé ou pour passer commande directement.
+          </p>
+          <div class="contact-items">
+            <div class="c-item">
+              <div class="c-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 1 7 7c0 4-7 13-7 13S5 13 5 9a7 7 0 0 1 7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              </div>
+              <div class="c-text">
+                <strong>Adresse</strong>
+                <span>71 Avenue Louis Roche, 92230 Gennevilliers</span>
+              </div>
+            </div>
+            <div class="c-item">
+              <div class="c-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 4.1 5.18 2 2 0 0 1 6.09 3h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L10.09 11a16 16 0 0 0 6.91 6.91l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div class="c-text">
+                <strong>Téléphone</strong>
+                <span>01 47 33 94 05 · 06 23 91 07 24 · 07 62 18 58 71</span>
+              </div>
+            </div>
+            <div class="c-item">
+              <div class="c-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="c-text">
+                <strong>Email</strong>
+                <span>adonisfranceabdellah@gmail.com</span>
+              </div>
+            </div>
+            <div class="c-item">
+              <div class="c-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div class="c-text">
+                <strong>Horaires</strong>
+                <span>Du lundi au vendredi, 9h – 18h</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrap reveal reveal-delay-2">
+          <div class="contact-form">
+            <div class="form-title">Envoyer un message</div>
+            <form id="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" onsubmit="handleSubmit(event)" novalidate>
+              <input type="hidden" name="form-name" value="contact" />
+              <p style="display:none"><input name="bot-field" /></p>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="f-nom">Nom</label>
+                  <input type="text" id="f-nom" name="nom" placeholder="Votre nom" required />
+                </div>
+                <div class="form-group">
+                  <label for="f-prenom">Prénom</label>
+                  <input type="text" id="f-prenom" name="prenom" placeholder="Votre prénom" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="f-email">Adresse email</label>
+                <input type="email" id="f-email" name="email" placeholder="votre@email.com" required />
+              </div>
+              <div class="form-group">
+                <label for="f-produit">Produit concerné</label>
+                <select id="f-produit" name="produit">
+                  <option value="">Sélectionner un produit</option>
+                  <option>Charbon de bois pour encens</option>
+                  <option>Charbon de coco XL (26×26×26 mm)</option>
+                  <option>Thé Chunmee 41022AAAA</option>
+                  <option>Thé Gunpowder 3505AAAAA</option>
+                  <option>Sacs tissés PP</option>
+                  <option>Produits divers / Bazar</option>
+                  <option>Plusieurs produits / autre demande</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="f-message">Message</label>
+                <textarea id="f-message" name="message" placeholder="Décrivez votre demande, le volume souhaité, etc." required></textarea>
+              </div>
+              <button type="submit" class="btn-submit">
+                Envoyer ma demande
+                <span class="icon-circle">
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><path d="M3 8h10M8 3l5 5-5 5"/></svg>
+                </span>
+              </button>
+            </form>
+            <div class="form-success" id="form-success">
+              <div class="form-success-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/></svg>
+              </div>
+              <h3>Message envoyé !</h3>
+              <p>Merci pour votre demande. Nous reviendrons vers vous rapidement.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ──────────────────────────────────────────────── -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="logo%20adonis-01.png" alt="Adonis France" />
+          <p>B2B &amp; B2C — Import direct depuis la Chine depuis 2006. Charbon de bois pour encens, thé vert de Chine, sacs tissés PP. Distribution France et Europe.</p>
+          <div style="margin-top:18px;display:flex;flex-direction:column;gap:6px;">
+            <a href="tel:0147339405" style="font-size:.82rem;color:rgba(255,255,255,.4);transition:color .25s;" onmouseover="this.style.color='rgba(255,255,255,.8)'" onmouseout="this.style.color='rgba(255,255,255,.4)'">01 47 33 94 05</a>
+            <a href="tel:0623910724" style="font-size:.82rem;color:rgba(255,255,255,.4);transition:color .25s;" onmouseover="this.style.color='rgba(255,255,255,.8)'" onmouseout="this.style.color='rgba(255,255,255,.4)'">06 23 91 07 24</a>
+            <a href="tel:0762185871" style="font-size:.82rem;color:rgba(255,255,255,.4);transition:color .25s;" onmouseover="this.style.color='rgba(255,255,255,.8)'" onmouseout="this.style.color='rgba(255,255,255,.4)'">07 62 18 58 71</a>
+            <a href="mailto:adonisfranceabdellah@gmail.com" style="font-size:.82rem;color:rgba(255,255,255,.4);transition:color .25s;" onmouseover="this.style.color='rgba(255,255,255,.8)'" onmouseout="this.style.color='rgba(255,255,255,.4)'">adonisfranceabdellah@gmail.com</a>
+            <span style="font-size:.82rem;color:rgba(255,255,255,.4);">71 Avenue Louis Roche, 92230 Gennevilliers</span>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#produits">Nos produits</a></li>
+            <li><a href="a-propos.html">À propos</a></li>
+            <li><a href="catalogue.html">Catalogue</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="mentions-legales.html">Mentions légales</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Catalogue</h4>
+          <ul>
+            <li><a href="charbon-33mm.html">Charbon 33mm</a></li>
+            <li><a href="charbon-40mm.html">Charbon 40mm</a></li>
+            <li><a href="charbon-coco.html">Charbon Coco XL</a></li>
+            <li><a href="afdal-chunmee.html">Al Afdal — Chunmee</a></li>
+            <li><a href="aon-chunmee.html">Ahl Oued Noun — Chunmee</a></li>
+            <li><a href="kasbah-gunpowder.html">Al Kasbah — Gunpowder</a></li>
+            <li><a href="aon-gunpowder.html">Ahl Oued Noun — Gunpowder</a></li>
+            <li><a href="sacs.html">Sacs tissés PP</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Adonis France — Tous droits réservés</p>
+        <div class="footer-links">
+          <a href="mentions-legales.html">Mentions légales</a>
+          <a href="mailto:adonisfranceabdellah@gmail.com">adonisfranceabdellah@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── WHATSAPP FLOAT ──────────────────────────────────────── -->
+  <a href="https://wa.me/33623910724" class="wa-float" target="_blank" rel="noopener" aria-label="Contacter sur WhatsApp">
+    <span class="wa-float-icon">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+    </span>
+    <span class="wa-float-label">Nous écrire</span>
+  </a>
+
+  <!-- ── BACK TO TOP ────────────────────────────────────────── -->
+  <button class="back-top" id="back-top" aria-label="Retour en haut" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 12V4M4 7l4-4 4 4"/></svg>
+  </button>
+
+  <!-- ── SCRIPTS ─────────────────────────────────────────────── -->
+  <script>
+    // Hamburger / mobile menu
+    const ham    = document.getElementById('hamburger');
+    const mobMenu= document.getElementById('mob-menu');
+    let mobOpen  = false;
+    ham.addEventListener('click', () => {
+      mobOpen = !mobOpen;
+      ham.classList.toggle('open', mobOpen);
+      mobMenu.style.display = mobOpen ? 'flex' : 'none';
+      document.body.style.overflow = mobOpen ? 'hidden' : '';
+    });
+    function closeMob() {
+      mobOpen = false;
+      ham.classList.remove('open');
+      mobMenu.style.display = 'none';
+      document.body.style.overflow = '';
+    }
+
+    // Scroll reveal
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+    // Nav scroll spy
+    const sections = ['accueil','produits','a-propos','pourquoi','contact'];
+    const navAnchors = document.querySelectorAll('.nav-links a');
+    const backTop = document.getElementById('back-top');
+    window.addEventListener('scroll', () => {
+      const y = window.scrollY + 120;
+      // back-to-top visibility
+      backTop.classList.toggle('visible', window.scrollY > 400);
+      // active nav link
+      let current = 'accueil';
+      sections.forEach(id => {
+        const el = document.getElementById(id);
+        if (el && el.offsetTop <= y) current = id;
+      });
+      navAnchors.forEach(a => {
+        a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+      });
+    }, { passive: true });
+
+    // Contact form → Netlify Forms
+    function handleSubmit(e) {
+      e.preventDefault();
+      const nom     = document.getElementById('f-nom').value.trim();
+      const email   = document.getElementById('f-email').value.trim();
+      const message = document.getElementById('f-message').value.trim();
+      if (!nom || !email || !message) {
+        [['f-nom',nom],['f-email',email],['f-message',message]].forEach(([id,v]) => {
+          const el = document.getElementById(id);
+          el.style.borderColor = v ? '' : 'var(--gold)';
+          el.style.boxShadow   = v ? '' : '0 0 0 4px rgba(184,137,43,.15)';
+        });
+        return;
+      }
+      const formEl = document.getElementById('contact-form');
+      const btn = formEl.querySelector('.btn-submit');
+      btn.disabled = true;
+      btn.textContent = 'Envoi en cours…';
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(new FormData(formEl)).toString()
+      })
+      .then(() => {
+        formEl.style.display = 'none';
+        document.getElementById('form-success').style.display = 'flex';
+      })
+      .catch(() => {
+        btn.disabled = false;
+        btn.textContent = 'Envoyer ma demande';
+        alert('Erreur lors de l\'envoi. Contactez-nous par WhatsApp.');
+      });
+    }
+  </script>
+  <!-- BANNIERE COOKIES -->
+  <div id="cookie-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:rgba(14,27,46,.97);backdrop-filter:blur(12px);border-top:1px solid rgba(255,255,255,.1);padding:20px 24px;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;">
+    <p style="font-size:.82rem;color:rgba(255,255,255,.65);line-height:1.6;margin:0;max-width:680px">
+      Nous utilisons des cookies analytiques (Google Analytics) pour mesurer l'audience du site et améliorer votre expérience. Aucune donnée personnelle n'est vendue.
+      <a href="mentions-legales.html" style="color:#d4a84e;text-decoration:underline;text-underline-offset:3px">En savoir plus</a>
+    </p>
+    <div style="display:flex;gap:10px;flex-shrink:0">
+      <button onclick="cookieRefuse()" style="font-size:.78rem;font-weight:600;padding:10px 20px;border-radius:100px;border:1px solid rgba(255,255,255,.2);background:transparent;color:rgba(255,255,255,.55);cursor:pointer;transition:all .2s">Refuser</button>
+      <button onclick="cookieAccept()" style="font-size:.78rem;font-weight:700;padding:10px 22px;border-radius:100px;border:none;background:#b8892b;color:#0e1b2e;cursor:pointer;transition:all .2s">Accepter</button>
+    </div>
+  </div>
+  <script>
+    (function(){
+      var consent = localStorage.getItem('adonis_cookie_consent');
+      if(!consent){
+        var b = document.getElementById('cookie-banner');
+        b.style.display='flex';
+      } else if(consent === 'refused') {
+        window['ga-disable-G-L894LQPZLV'] = true;
+      }
+    })();
+    function cookieAccept(){
+      localStorage.setItem('adonis_cookie_consent','accepted');
+      document.getElementById('cookie-banner').style.display='none';
+    }
+    function cookieRefuse(){
+      localStorage.setItem('adonis_cookie_consent','refused');
+      window['ga-disable-G-L894LQPZLV'] = true;
+      document.getElementById('cookie-banner').style.display='none';
+    }
+  </script>
+  <!-- FIN BANNIERE COOKIES -->
+</body>
+</html>
