@@ -1442,10 +1442,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
         body: JSON.stringify(data)
       })
-      .then(r => r.json())
-      .then(() => {
-        formEl.style.display = 'none';
-        document.getElementById('form-success').style.display = 'flex';
+      .then(r => {
+        if (r.ok) {
+          formEl.style.display = 'none';
+          document.getElementById('form-success').style.display = 'flex';
+        } else {
+          throw new Error('HTTP ' + r.status);
+        }
       })
       .catch(() => {
         btn.disabled = false;
