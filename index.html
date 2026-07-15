@@ -1256,9 +1256,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="contact-form-wrap reveal reveal-delay-2">
           <div class="contact-form">
             <div class="form-title">Envoyer un message</div>
-            <form id="contact-form" name="contact" method="POST" onsubmit="handleSubmit(event)" novalidate>
+            <form id="contact-form" name="contact" method="POST" action="https://formsubmit.co/adonisfranceabdellah@gmail.com" onsubmit="handleSubmit(event)" novalidate>
               <input type="hidden" name="_captcha" value="false" />
               <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_next" value="https://adonisfr1.github.io/adonis-france/?envoi=ok" />
+              <input type="hidden" name="_subject" value="Nouveau devis — Adonis France" />
               <div class="form-row">
                 <div class="form-group">
                   <label for="f-nom">Nom</label>
@@ -1417,13 +1419,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       });
     }, { passive: true });
 
-    // Contact form → Formsubmit.co (fonctionne sur GitHub Pages)
+    // Contact form — POST standard vers Formsubmit.co (pas d'AJAX, pas de CORS)
     function handleSubmit(e) {
-      e.preventDefault();
       const nom     = document.getElementById('f-nom').value.trim();
       const email   = document.getElementById('f-email').value.trim();
       const message = document.getElementById('f-message').value.trim();
       if (!nom || !email || !message) {
+        e.preventDefault();
         [['f-nom',nom],['f-email',email],['f-message',message]].forEach(([id,v]) => {
           const el = document.getElementById(id);
           el.style.borderColor = v ? '' : 'var(--gold)';
@@ -1431,29 +1433,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         });
         return;
       }
-      const formEl = document.getElementById('contact-form');
-      const btn = formEl.querySelector('.btn-submit');
+      const btn = document.getElementById('contact-form').querySelector('.btn-submit');
       btn.disabled = true;
       btn.textContent = 'Envoi en cours…';
-      const data = {};
-      new FormData(formEl).forEach((v, k) => { data[k] = v; });
-      fetch('https://formsubmit.co/ajax/adonisfranceabdellah@gmail.com', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-        body: JSON.stringify(data)
-      })
-      .then(r => {
-        if (r.ok) {
-          formEl.style.display = 'none';
-          document.getElementById('form-success').style.display = 'flex';
-        } else {
-          throw new Error('HTTP ' + r.status);
-        }
-      })
-      .catch(() => {
-        btn.disabled = false;
-        btn.textContent = 'Envoyer ma demande';
-        alert('Erreur lors de l\'envoi. Contactez-nous par WhatsApp ou email.');
+      // Le form se soumet normalement — Formsubmit redirige vers ?envoi=ok
+    }
+    // Affiche le message de succès si on revient après envoi
+    if (new URLSearchParams(window.location.search).get('envoi') === 'ok') {
+      document.addEventListener('DOMContentLoaded', function() {
+        const formEl = document.getElementById('contact-form');
+        const successEl = document.getElementById('form-success');
+        if (formEl) formEl.style.display = 'none';
+        if (successEl) successEl.style.display = 'flex';
+        const s = document.getElementById('contact');
+        if (s) setTimeout(() => s.scrollIntoView({ behavior: 'smooth' }), 300);
       });
     }
   </script>
