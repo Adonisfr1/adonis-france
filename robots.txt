@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://adonis-fr.netlify.app/sitemap.xml
+Sitemap: https://adonisfr1.github.io/adonis-france/sitemap.xml

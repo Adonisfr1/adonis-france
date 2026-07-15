@@ -737,6 +737,40 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   gtag('js', new Date());
   gtag('config', 'G-L894LQPZLV');
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Adonis France",
+  "legalName": "Adonis France SARL",
+  "description": "Grossiste B2B import direct depuis la Chine depuis 2006. Charbon pour encens et thés verts en vrac. Gennevilliers, Île-de-France.",
+  "url": "https://adonisfr1.github.io/adonis-france/",
+  "logo": "https://adonisfr1.github.io/adonis-france/logo%20adonis-01.png",
+  "image": "https://adonisfr1.github.io/adonis-france/logo%20adonis-01.png",
+  "telephone": "+33762185871",
+  "email": "adonisfranceabdellah@gmail.com",
+  "foundingDate": "2006",
+  "vatID": "FR04489719112",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "71 Avenue Louis Roche",
+    "addressLocality": "Gennevilliers",
+    "postalCode": "92230",
+    "addressCountry": "FR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 48.9199,
+    "longitude": 2.3068
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "09:00",
+    "closes": "18:00"
+  }
+}
+</script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->
@@ -1447,6 +1481,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         if (res.success) {
           formEl.style.display = 'none';
           document.getElementById('form-success').style.display = 'flex';
+          if (typeof gtag !== 'undefined') {
+            gtag('event', 'generate_lead', { event_category: 'Contact', event_label: 'Formulaire devis' });
+          }
         } else {
           throw new Error(res.message);
         }
