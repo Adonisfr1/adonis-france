@@ -1256,11 +1256,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="contact-form-wrap reveal reveal-delay-2">
           <div class="contact-form">
             <div class="form-title">Envoyer un message</div>
-            <form id="contact-form" name="contact" method="POST" action="https://formsubmit.co/adonisfranceabdellah@gmail.com" onsubmit="handleSubmit(event)" novalidate>
-              <input type="hidden" name="_captcha" value="false" />
-              <input type="hidden" name="_template" value="table" />
-              <input type="hidden" name="_next" value="https://adonisfr1.github.io/adonis-france/?envoi=ok" />
-              <input type="hidden" name="_subject" value="Nouveau devis — Adonis France" />
+            <form id="contact-form" name="contact" onsubmit="handleSubmit(event)" novalidate>
+              <input type="hidden" name="access_key" value="a94a622f-48c4-4138-86c8-9df9d2808f39" />
+              <input type="hidden" name="subject" value="Nouveau devis - Adonis France" />
+              <input type="hidden" name="from_name" value="Adonis France Site Web" />
               <div class="form-row">
                 <div class="form-group">
                   <label for="f-nom">Nom</label>
@@ -1419,13 +1418,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       });
     }, { passive: true });
 
-    // Contact form — POST standard vers Formsubmit.co (pas d'AJAX, pas de CORS)
+    // Contact form → Web3Forms (AJAX, CORS OK, pas d'activation requise)
     function handleSubmit(e) {
+      e.preventDefault();
       const nom     = document.getElementById('f-nom').value.trim();
       const email   = document.getElementById('f-email').value.trim();
       const message = document.getElementById('f-message').value.trim();
       if (!nom || !email || !message) {
-        e.preventDefault();
         [['f-nom',nom],['f-email',email],['f-message',message]].forEach(([id,v]) => {
           const el = document.getElementById(id);
           el.style.borderColor = v ? '' : 'var(--gold)';
@@ -1433,20 +1432,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         });
         return;
       }
-      const btn = document.getElementById('contact-form').querySelector('.btn-submit');
+      const formEl = document.getElementById('contact-form');
+      const btn = formEl.querySelector('.btn-submit');
       btn.disabled = true;
       btn.textContent = 'Envoi en cours…';
-      // Le form se soumet normalement — Formsubmit redirige vers ?envoi=ok
-    }
-    // Affiche le message de succès si on revient après envoi
-    if (new URLSearchParams(window.location.search).get('envoi') === 'ok') {
-      document.addEventListener('DOMContentLoaded', function() {
-        const formEl = document.getElementById('contact-form');
-        const successEl = document.getElementById('form-success');
-        if (formEl) formEl.style.display = 'none';
-        if (successEl) successEl.style.display = 'flex';
-        const s = document.getElementById('contact');
-        if (s) setTimeout(() => s.scrollIntoView({ behavior: 'smooth' }), 300);
+      const data = Object.fromEntries(new FormData(formEl));
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(data)
+      })
+      .then(r => r.json())
+      .then(res => {
+        if (res.success) {
+          formEl.style.display = 'none';
+          document.getElementById('form-success').style.display = 'flex';
+        } else {
+          throw new Error(res.message);
+        }
+      })
+      .catch(() => {
+        btn.disabled = false;
+        btn.textContent = 'Envoyer ma demande';
+        alert('Erreur lors de l\'envoi. Contactez-nous par WhatsApp ou email.');
       });
     }
   </script>
